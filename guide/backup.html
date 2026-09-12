@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#087f72">
+<title>App backup and restore — Xcopy File Manager</title>
+<meta name="description" content="Official website, guide, privacy policy and support for Xcopy File Manager for Android.">
+<link rel="icon" href="../xcopy-icon.png">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../site.js"></script>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="../index.html"><img src="../xcopy-icon.png" alt="Xcopy File Manager"><span>Xcopy File Manager</span></a>
+<nav class="navlinks">
+<a href="../index.html">Home</a>
+<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../privacy.html">Privacy</a>
+<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<div class="lang"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="it">IT</button></div>
+</nav>
+</div></header>
+
+<main><section><div class="wrap guide-layout">
+<aside class="guide-side"><a href="index.html">← <span data-lang="en">All guide articles</span><span data-lang="it">Tutti gli articoli</span></a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Per iniziare</div><a href="getting_started.html">Primi passi</a><a href="tree.html">Albero di navigazione</a><a href="toolbar.html">Barra strumenti verticale</a><a href="selection.html">Selezione multipla</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">File e cartelle</div><a href="copy_move.html">Copiare, spostare e duplicare</a><a href="hidden_sort.html">File nascosti e ordinamento</a><a href="search.html">Ricerca</a><a href="details.html">Dettagli, dimensioni e conteggi</a><a href="archives_trash.html">Archivi e Cestino</a><a href="apps_usb.html">App e dispositivi USB</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Rete e condivisione</div><a href="remote.html">Connessioni remote</a><a href="wifi.html">Trasferimento file Wi‑Fi</a><a href="ftp_server.html">Server FTP interno</a><a href="ssh_server.html">Server SSH/SFTP interno</a><a href="dlna.html">DLNA / UPnP</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Sicurezza e dati</div><a href="vaults.html">Cassaforti</a><a href="backup.html">Backup e ripristino dell’app</a><a href="security.html">Sicurezza e privacy</a><a href="shizuku.html">Shizuku e root</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Strumenti</div><a href="notes.html">Gestore Note</a><a href="editors.html">Viewer ed editor integrati</a><a href="metadata.html">Metadati audio e video</a><a href="time_machine.html">Time Machine</a><a href="automation.html">Automazioni</a><a href="shortcuts.html">Shortcut, Quick Settings e widget</a><a href="settings.html">Impostazioni</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Aiuto</div><a href="troubleshooting.html">Risoluzione problemi</a></aside>
+<div class="guide-main">
+<div class="breadcrumb"><a href="index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a> / <span data-lang="en">App backup and restore</span><span data-lang="it">Backup e ripristino dell’app</span></div>
+<div class="guide-article">
+<div data-lang="en"><article><h1>App backup and restore</h1><p class="intro">Save Xcopy settings, Notes and saved network connections so they can be restored later.</p><nav class="toc"><b>On this page</b><a href="#content">What is included</a><a href="#password">Backup password</a><a href="#auto">Automatic backup</a><a href="#restore">Restore</a></nav><section id="content"><h2>What is included</h2><p>A manual backup includes supported settings, Notes and saved SMB, FTP, SSH/SFTP and WebDAV connection credentials. Google Drive authorization and Vault recovery information are not exported.</p></section><section id="password"><h2>Backup password</h2><p>When you export a backup from Settings, Xcopy asks you to choose a backup password. Saved network passwords are encrypted with it and are never written to the backup in plain text. Keep the backup password somewhere safe: Xcopy does not store it and cannot recover it for you.</p></section><section id="auto"><h2>Automatic backup</h2><p>Automatic App backup can save settings and Notes periodically without asking for a password. For security, automatic backups do not include saved network passwords.</p></section><section id="restore"><h2>Restore</h2><p>Select the folder containing the backup. If the backup contains encrypted credentials, enter the same backup password used during export. Older backups that did not contain passwords remain supported.</p></section><div class="related"><h2>Related articles</h2><a href="automation.html">→ Automation</a><a href="vaults.html">→ Vaults</a><a href="settings.html">→ Settings</a></div></article></div>
+<div data-lang="it"><article><h1>Backup e ripristino dell’app</h1><p class="intro">Salva impostazioni, Note e connessioni di rete di Xcopy per poterle ripristinare in seguito.</p><nav class="toc"><b>In questa pagina</b><a href="#content">Cosa include</a><a href="#password">Password del backup</a><a href="#auto">Backup automatico</a><a href="#restore">Ripristino</a></nav><section id="content"><h2>Cosa include</h2><p>Il backup manuale include le impostazioni supportate, le Note e le credenziali salvate delle connessioni SMB, FTP, SSH/SFTP e WebDAV. L’autorizzazione di Google Drive e le informazioni di recupero delle Cassaforti non vengono esportate.</p></section><section id="password"><h2>Password del backup</h2><p>Quando esporti un backup dalle Impostazioni, Xcopy ti chiede di scegliere una password del backup. Le password delle connessioni vengono cifrate con questa password e non vengono mai scritte in chiaro nel file. Conservala in un posto sicuro: Xcopy non la salva e non può recuperarla.</p></section><section id="auto"><h2>Backup automatico</h2><p>Il Backup app automatico può salvare periodicamente impostazioni e Note senza chiedere una password. Per sicurezza, i backup automatici non includono le password delle connessioni salvate.</p></section><section id="restore"><h2>Ripristino</h2><p>Seleziona la cartella che contiene il backup. Se il backup contiene credenziali cifrate, inserisci la stessa password usata durante l’esportazione. I vecchi backup che non contenevano password restano compatibili.</p></section><div class="related"><h2>Articoli correlati</h2><a href="automation.html">→ Automazioni</a><a href="vaults.html">→ Cassaforti</a><a href="settings.html">→ Impostazioni</a></div></article></div>
+</div>
+</div>
+</div></section></main>
+
+<footer><div class="wrap footer-grid">
+<div>© 2026 Xcopy File Manager</div>
+<div class="footer-links">
+<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../privacy.html">Privacy</a>
+<a href="../terms.html"><span data-lang="en">Terms</span><span data-lang="it">Termini</span></a>
+<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<a href="https://github.com/Ferrazzi/xcopyfilemanager">GitHub</a>
+</div></div></footer>
+</body></html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#087f72">
+<title>Troubleshooting — Xcopy File Manager</title>
+<meta name="description" content="Official website, guide, privacy policy and support for Xcopy File Manager for Android.">
+<link rel="icon" href="../xcopy-icon.png">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../site.js"></script>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="../index.html"><img src="../xcopy-icon.png" alt="Xcopy File Manager"><span>Xcopy File Manager</span></a>
+<nav class="navlinks">
+<a href="../index.html">Home</a>
+<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../privacy.html">Privacy</a>
+<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<div class="lang"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="it">IT</button></div>
+</nav>
+</div></header>
+
+<main><section><div class="wrap guide-layout">
+<aside class="guide-side"><a href="index.html">← <span data-lang="en">All guide articles</span><span data-lang="it">Tutti gli articoli</span></a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Per iniziare</div><a href="getting_started.html">Primi passi</a><a href="tree.html">Albero di navigazione</a><a href="toolbar.html">Barra strumenti verticale</a><a href="selection.html">Selezione multipla</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">File e cartelle</div><a href="copy_move.html">Copiare, spostare e duplicare</a><a href="hidden_sort.html">File nascosti e ordinamento</a><a href="search.html">Ricerca</a><a href="details.html">Dettagli, dimensioni e conteggi</a><a href="archives_trash.html">Archivi e Cestino</a><a href="apps_usb.html">App e dispositivi USB</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Rete e condivisione</div><a href="remote.html">Connessioni remote</a><a href="wifi.html">Trasferimento file Wi‑Fi</a><a href="ftp_server.html">Server FTP interno</a><a href="ssh_server.html">Server SSH/SFTP interno</a><a href="dlna.html">DLNA / UPnP</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Sicurezza e dati</div><a href="vaults.html">Cassaforti</a><a href="backup.html">Backup e ripristino dell’app</a><a href="security.html">Sicurezza e privacy</a><a href="shizuku.html">Shizuku e root</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Strumenti</div><a href="notes.html">Gestore Note</a><a href="editors.html">Viewer ed editor integrati</a><a href="metadata.html">Metadati audio e video</a><a href="time_machine.html">Time Machine</a><a href="automation.html">Automazioni</a><a href="shortcuts.html">Shortcut, Quick Settings e widget</a><a href="settings.html">Impostazioni</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Aiuto</div><a href="troubleshooting.html">Risoluzione problemi</a></aside>
+<div class="guide-main">
+<div class="breadcrumb"><a href="index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a> / <span data-lang="en">Troubleshooting</span><span data-lang="it">Risoluzione problemi</span></div>
+<div class="guide-article">
+<div data-lang="en"><article><h1>Troubleshooting</h1><p class="intro">Quick checks when a source, server or operation does not behave as expected.</p><nav class="toc"><b>On this page</b><a href="#network">Network</a><a href="#servers">Xcopy servers</a><a href="#storage">Storage and USB</a><a href="#vault">Vault</a></nav><section id="network"><h2>Network</h2><ul><li>Confirm devices are on the same LAN.</li><li>Check local-network permission when Android requires it.</li><li>For SMB/FTP/SSH verify IP/host, port and credentials.</li><li>For DLNA collapse/expand the node to run discovery again.</li></ul></section><section id="servers"><h2>Xcopy servers</h2><ul><li>Check the foreground notification: Android must show it while the service is active.</li><li>Use Quick Settings or launcher shortcuts to toggle without opening Xcopy.</li><li>If a tile is missing, add it from Android's tile editor or the Settings request helper.</li></ul></section><section id="storage"><h2>Storage and USB</h2><ul><li>For protected folders verify Shizuku/root or SAF authorization.</li><li>Do not disconnect USB during active operations.</li><li>If a list does not show a change immediately, use Refresh or leave and re-enter the folder.</li></ul></section><section id="vault"><h2>Vault</h2><ul><li>Biometrics are per-vault, not global.</li><li>Keep recovery codes outside the device.</li><li>If all recovery credentials are lost, encryption has no bypass.</li></ul></section><div class="related"><h2>Related articles</h2><a href="security.html">→ Security and privacy</a><a href="shizuku.html">→ Shizuku and root</a><a href="remote.html">→ Remote connections</a></div></article></div>
+<div data-lang="it"><article><h1>Risoluzione problemi</h1><p class="intro">Controlli rapidi quando una sorgente, un server o un’operazione non funziona come previsto.</p><nav class="toc"><b>In questa pagina</b><a href="#network">Rete</a><a href="#servers">Server Xcopy</a><a href="#storage">Storage e USB</a><a href="#vault">Cassaforte</a></nav><section id="network"><h2>Rete</h2><ul><li>Verifica che i dispositivi siano sulla stessa LAN.</li><li>Controlla il permesso rete locale quando richiesto da Android.</li><li>Per SMB/FTP/SSH verifica IP/host, porta e credenziali.</li><li>Per DLNA espandi di nuovo il nodo per rilanciare la ricerca.</li></ul></section><section id="servers"><h2>Server Xcopy</h2><ul><li>Controlla la notifica foreground: se il servizio è attivo, Android deve mostrarla.</li><li>Usa Quick Settings o shortcut launcher per ON/OFF senza aprire Xcopy.</li><li>Se un riquadro non compare, aggiungilo dal pannello Modifica riquadri Android o dalla richiesta in Impostazioni.</li></ul></section><section id="storage"><h2>Storage e USB</h2><ul><li>Se una cartella è protetta, verifica Shizuku/root o autorizzazione SAF.</li><li>Non scollegare USB durante operazioni attive.</li><li>Se una lista non mostra subito una modifica, usa Aggiorna oppure esci e rientra nella cartella.</li></ul></section><section id="vault"><h2>Cassaforte</h2><ul><li>La biometria è per singola cassaforte, non globale.</li><li>Conserva il codice di recupero fuori dal dispositivo.</li><li>Se perdi tutte le credenziali di recupero non è previsto un bypass della cifratura.</li></ul></section><div class="related"><h2>Articoli correlati</h2><a href="security.html">→ Sicurezza e privacy</a><a href="shizuku.html">→ Shizuku e root</a><a href="remote.html">→ Connessioni remote</a></div></article></div>
+</div>
+</div>
+</div></section></main>
+
+<footer><div class="wrap footer-grid">
+<div>© 2026 Xcopy File Manager</div>
+<div class="footer-links">
+<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../privacy.html">Privacy</a>
+<a href="../terms.html"><span data-lang="en">Terms</span><span data-lang="it">Termini</span></a>
+<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<a href="https://github.com/Ferrazzi/xcopyfilemanager">GitHub</a>
+</div></div></footer>
+</body></html>

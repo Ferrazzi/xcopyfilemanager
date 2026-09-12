@@ -1,28 +1,23 @@
-# Xcopy File Manager website
+# Xcopy File Manager official website
 
-Official website, privacy policy, support and documentation for Xcopy File Manager for Android.
+GitHub Pages website for Xcopy File Manager for Android.
 
-## GitHub Pages
+Includes:
+- bilingual homepage (IT/EN)
+- complete bilingual user guide imported from Xcopy File Manager 1.2
+- Privacy Policy
+- Terms of Service
+- Support page
+- screenshot gallery ready for real app captures
 
-This repository is ready to be served directly from the `main` branch root.
+## Publish with GitHub Pages
+Settings → Pages → Deploy from a branch → `main` → `/ (root)`
 
-1. Open **Settings → Pages**
-2. Under **Build and deployment**, choose **Deploy from a branch**
-3. Branch: `main`
-4. Folder: `/ (root)`
-5. Save
+Expected project URL:
+https://ferrazzi.github.io/xcopyfilemanager/
 
-Project Pages URL:
+## Screenshots
+See `screenshots/README.txt`.
 
-`https://ferrazzi.github.io/xcopyfilemanager/`
-
-Pages:
-- `index.html`
-- `privacy.html`
-- `terms.html`
-- `support.html`
-
-## OAuth production note
-
-Google OAuth production verification requires the homepage to be hosted on a verified domain you own.
-You can keep this repository and GitHub Pages hosting, then connect a custom domain later without moving the site.
+## Google OAuth
+For production OAuth verification, a custom domain that can be verified as owned by the developer may be required. This site can remain hosted by GitHub Pages and later be attached to that custom domain.

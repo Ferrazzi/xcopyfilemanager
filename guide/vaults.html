@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#087f72">
+<title>Vaults — Xcopy File Manager</title>
+<meta name="description" content="Official website, guide, privacy policy and support for Xcopy File Manager for Android.">
+<link rel="icon" href="../xcopy-icon.png">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../site.js"></script>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="../index.html"><img src="../xcopy-icon.png" alt="Xcopy File Manager"><span>Xcopy File Manager</span></a>
+<nav class="navlinks">
+<a href="../index.html">Home</a>
+<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../privacy.html">Privacy</a>
+<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<div class="lang"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="it">IT</button></div>
+</nav>
+</div></header>
+
+<main><section><div class="wrap guide-layout">
+<aside class="guide-side"><a href="index.html">← <span data-lang="en">All guide articles</span><span data-lang="it">Tutti gli articoli</span></a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Per iniziare</div><a href="getting_started.html">Primi passi</a><a href="tree.html">Albero di navigazione</a><a href="toolbar.html">Barra strumenti verticale</a><a href="selection.html">Selezione multipla</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">File e cartelle</div><a href="copy_move.html">Copiare, spostare e duplicare</a><a href="hidden_sort.html">File nascosti e ordinamento</a><a href="search.html">Ricerca</a><a href="details.html">Dettagli, dimensioni e conteggi</a><a href="archives_trash.html">Archivi e Cestino</a><a href="apps_usb.html">App e dispositivi USB</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Rete e condivisione</div><a href="remote.html">Connessioni remote</a><a href="wifi.html">Trasferimento file Wi‑Fi</a><a href="ftp_server.html">Server FTP interno</a><a href="ssh_server.html">Server SSH/SFTP interno</a><a href="dlna.html">DLNA / UPnP</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Sicurezza e dati</div><a href="vaults.html">Cassaforti</a><a href="backup.html">Backup e ripristino dell’app</a><a href="security.html">Sicurezza e privacy</a><a href="shizuku.html">Shizuku e root</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Strumenti</div><a href="notes.html">Gestore Note</a><a href="editors.html">Viewer ed editor integrati</a><a href="metadata.html">Metadati audio e video</a><a href="time_machine.html">Time Machine</a><a href="automation.html">Automazioni</a><a href="shortcuts.html">Shortcut, Quick Settings e widget</a><a href="settings.html">Impostazioni</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Aiuto</div><a href="troubleshooting.html">Risoluzione problemi</a></aside>
+<div class="guide-main">
+<div class="breadcrumb"><a href="index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a> / <span data-lang="en">Vaults</span><span data-lang="it">Cassaforti</span></div>
+<div class="guide-article">
+<div data-lang="en"><article><h1>Vaults</h1><p class="intro">Create multiple independent encrypted spaces with separate passwords, biometrics and recovery codes.</p><nav class="toc"><b>On this page</b><a href="#create">Creating a vault</a><a href="#recovery">Recovery code</a><a href="#biometric">Per-vault biometrics</a><a href="#manage">Management</a></nav><section id="create"><h2>Creating a vault</h2><p>Expand Vault and choose <b>+ New vault</b>. Give it a name and set a strong password. Each vault is independent.</p></section><section id="recovery"><h2>Recovery code</h2><p>At creation Xcopy generates a recovery code to store outside the phone. It is not stored in plaintext. If you lose the password, use the code to set a new one.</p><div class="callout warning"><b>Keep it safe</b>If you lose the password, recovery code and have no valid already-configured biometric key, there is no backdoor to decrypt the data.</div></section><section id="biometric"><h2>Per-vault biometrics</h2><p>Long-press a vault: the menu shows <b>Enable biometrics</b> or <b>Disable biometrics</b> for that vault only. Each profile uses separate state and Keystore keys.</p></section><section id="manage"><h2>Management</h2><p>Long-press a vault to change its password, manage biometrics or password recovery, rename it, or delete it. To create another vault, use <b>+ New vault</b>.</p></section><div class="related"><h2>Related articles</h2><a href="security.html">→ Security and privacy</a><a href="backup.html">→ Backup and restore</a></div></article></div>
+<div data-lang="it"><article><h1>Cassaforti</h1><p class="intro">Creare più spazi cifrati indipendenti con password, biometria e codice di recupero separati.</p><nav class="toc"><b>In questa pagina</b><a href="#create">Creare una cassaforte</a><a href="#recovery">Codice di recupero</a><a href="#biometric">Biometria per singola cassaforte</a><a href="#manage">Gestione</a></nav><section id="create"><h2>Creare una cassaforte</h2><p>Espandi Cassaforte e scegli <b>+ Nuova cassaforte</b>. Dai un nome e imposta una password robusta. Ogni cassaforte è indipendente dalle altre.</p></section><section id="recovery"><h2>Codice di recupero</h2><p>Alla creazione Xcopy genera un codice di recupero da conservare fuori dal telefono. Non viene memorizzato in chiaro. Se perdi la password puoi usare questo codice per impostarne una nuova.</p><div class="callout warning"><b>Conservazione</b>Se perdi password, codice di recupero e non hai una biometria valida già configurata, non esiste una backdoor per decifrare i dati.</div></section><section id="biometric"><h2>Biometria per singola cassaforte</h2><p>Tieni premuta una cassaforte: il menu mostra <b>Abilita biometria</b> o <b>Disabilita biometria</b> solo per quella cassaforte. Ogni profilo usa stato e chiavi Keystore separati.</p></section><section id="manage"><h2>Gestione</h2><p>Tieni premuta una cassaforte per modificare la password, gestire la biometria o il recupero password, rinominarla oppure eliminarla. Per creare una nuova cassaforte usa <b>+ Nuova cassaforte</b>.</p></section><div class="related"><h2>Articoli correlati</h2><a href="security.html">→ Sicurezza e privacy</a><a href="backup.html">→ Backup e ripristino</a></div></article></div>
+</div>
+</div>
+</div></section></main>
+
+<footer><div class="wrap footer-grid">
+<div>© 2026 Xcopy File Manager</div>
+<div class="footer-links">
+<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../privacy.html">Privacy</a>
+<a href="../terms.html"><span data-lang="en">Terms</span><span data-lang="it">Termini</span></a>
+<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<a href="https://github.com/Ferrazzi/xcopyfilemanager">GitHub</a>
+</div></div></footer>
+</body></html>

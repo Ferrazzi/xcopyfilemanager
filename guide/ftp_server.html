@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#087f72">
+<title>Built-in FTP server — Xcopy File Manager</title>
+<meta name="description" content="Official website, guide, privacy policy and support for Xcopy File Manager for Android.">
+<link rel="icon" href="../xcopy-icon.png">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../site.js"></script>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="../index.html"><img src="../xcopy-icon.png" alt="Xcopy File Manager"><span>Xcopy File Manager</span></a>
+<nav class="navlinks">
+<a href="../index.html">Home</a>
+<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../privacy.html">Privacy</a>
+<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<div class="lang"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="it">IT</button></div>
+</nav>
+</div></header>
+
+<main><section><div class="wrap guide-layout">
+<aside class="guide-side"><a href="index.html">← <span data-lang="en">All guide articles</span><span data-lang="it">Tutti gli articoli</span></a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Per iniziare</div><a href="getting_started.html">Primi passi</a><a href="tree.html">Albero di navigazione</a><a href="toolbar.html">Barra strumenti verticale</a><a href="selection.html">Selezione multipla</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">File e cartelle</div><a href="copy_move.html">Copiare, spostare e duplicare</a><a href="hidden_sort.html">File nascosti e ordinamento</a><a href="search.html">Ricerca</a><a href="details.html">Dettagli, dimensioni e conteggi</a><a href="archives_trash.html">Archivi e Cestino</a><a href="apps_usb.html">App e dispositivi USB</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Rete e condivisione</div><a href="remote.html">Connessioni remote</a><a href="wifi.html">Trasferimento file Wi‑Fi</a><a href="ftp_server.html">Server FTP interno</a><a href="ssh_server.html">Server SSH/SFTP interno</a><a href="dlna.html">DLNA / UPnP</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Sicurezza e dati</div><a href="vaults.html">Cassaforti</a><a href="backup.html">Backup e ripristino dell’app</a><a href="security.html">Sicurezza e privacy</a><a href="shizuku.html">Shizuku e root</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Strumenti</div><a href="notes.html">Gestore Note</a><a href="editors.html">Viewer ed editor integrati</a><a href="metadata.html">Metadati audio e video</a><a href="time_machine.html">Time Machine</a><a href="automation.html">Automazioni</a><a href="shortcuts.html">Shortcut, Quick Settings e widget</a><a href="settings.html">Impostazioni</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Aiuto</div><a href="troubleshooting.html">Risoluzione problemi</a></aside>
+<div class="guide-main">
+<div class="breadcrumb"><a href="index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a> / <span data-lang="en">Built-in FTP server</span><span data-lang="it">Server FTP interno</span></div>
+<div class="guide-article">
+<div data-lang="en"><article><h1>Built-in FTP server</h1><p class="intro">Turn the Android device into an FTP server reachable on the local network.</p><nav class="toc"><b>On this page</b><a href="#toggle">Start and stop</a><a href="#config">Configuration</a><a href="#ops">Supported operations</a><a href="#warning">FTP is not encrypted</a></nav><section id="toggle"><h2>Start and stop</h2><p>Expand FTP in the tree. <b>FTP Server</b> is the local node: tap for ON/OFF; long-press to configure. While active, its subtitle shows <code>ftp://IP:port</code>.</p></section><section id="config"><h2>Configuration</h2><p>Set port, username, password, shared folder, read-only mode and auto-start. The shared root confines paths visible to clients.</p></section><section id="ops"><h2>Supported operations</h2><p>Browsing, upload/download, create/delete/rename and transfer resume are available in passive mode when enabled by configuration.</p></section><section id="warning"><h2>FTP is not encrypted</h2><div class="callout warning"><b>Warning</b>Classic FTP does not encrypt credentials or data. Use SSH/SFTP on untrusted networks.</div></section><div class="related"><h2>Related articles</h2><a href="ssh_server.html">→ SSH/SFTP server</a><a href="wifi.html">→ Wi‑Fi file transfer</a><a href="remote.html">→ Remote connections</a></div></article></div>
+<div data-lang="it"><article><h1>Server FTP interno</h1><p class="intro">Trasformare il dispositivo in un server FTP accessibile dalla rete locale.</p><nav class="toc"><b>In questa pagina</b><a href="#toggle">Avvio e arresto</a><a href="#config">Configurazione</a><a href="#ops">Operazioni supportate</a><a href="#warning">FTP non cifra</a></nav><section id="toggle"><h2>Avvio e arresto</h2><p>Espandi FTP nel tree. <b>Server FTP</b> è il nodo locale: tap per ON/OFF; pressione lunga per configurare. Quando attivo, il sottotitolo mostra l’indirizzo <code>ftp://IP:porta</code>.</p></section><section id="config"><h2>Configurazione</h2><p>Puoi impostare porta, utente, password, cartella condivisa, modalità sola lettura e avvio automatico. La radice condivisa limita i percorsi accessibili dal client.</p></section><section id="ops"><h2>Operazioni supportate</h2><p>Navigazione, upload/download, crea/elimina/rinomina e ripresa trasferimenti sono disponibili in modalità passiva quando abilitati dalla configurazione.</p></section><section id="warning"><h2>FTP non cifra</h2><div class="callout warning"><b>Attenzione</b>FTP classico non cifra credenziali o dati. Per reti non fidate usa il server SSH/SFTP.</div></section><div class="related"><h2>Articoli correlati</h2><a href="ssh_server.html">→ Server SSH/SFTP</a><a href="wifi.html">→ Trasferimento Wi‑Fi</a><a href="remote.html">→ Connessioni remote</a></div></article></div>
+</div>
+</div>
+</div></section></main>
+
+<footer><div class="wrap footer-grid">
+<div>© 2026 Xcopy File Manager</div>
+<div class="footer-links">
+<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../privacy.html">Privacy</a>
+<a href="../terms.html"><span data-lang="en">Terms</span><span data-lang="it">Termini</span></a>
+<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<a href="https://github.com/Ferrazzi/xcopyfilemanager">GitHub</a>
+</div></div></footer>
+</body></html>
