@@ -1,12 +1,11 @@
-# Xcopy File Manager website v9
+# Xcopy File Manager website v10 — bilingual/contrast fix
 
-Based on V8.
+Based on v9.
 
-Changes:
-- Guide opens immediately with tree on the left and the first article on the right.
-- Numeric chips removed from guide branches.
-- Tree branch alignment improved.
-- NAS + FTP screenshots shown together in Network & Cloud.
-- Tools-menu screenshot integrated into Advanced Tools.
-- Existing dual-panel, portrait File Manager and Xcopy Clean screenshots preserved.
-- No standalone screenshot gallery.
+Fixes:
+- robust global IT/EN switching (opposite language always hidden with !important)
+- hero floating card no longer shows both Italian and English
+- full guide switches correctly between Italian and English
+- security cards use dark text on white cards
+- translated the last two hardcoded Italian homepage strings
+- verified all guide article pages contain both IT and EN content

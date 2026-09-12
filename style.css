@@ -149,13 +149,7 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
 .footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .footer-links{display:flex;gap:18px;flex-wrap:wrap}
 
-[data-lang]{display:none}
-html[data-language="it"] [data-lang="it"],html[data-language="en"] [data-lang="en"]{display:block}
-span[data-lang],a[data-lang]{display:none}
-html[data-language="it"] span[data-lang="it"],html[data-language="en"] span[data-lang="en"],
-html[data-language="it"] a[data-lang="it"],html[data-language="en"] a[data-lang="en"]{display:inline}
-
-@media(max-width:980px){
+span[data-lang],a@media(max-width:980px){
  .hero-grid,.split{grid-template-columns:1fr}
  .split.reverse .copy,.split.reverse .visual{order:initial}
  .hero-icons{min-height:390px}
@@ -573,4 +567,35 @@ html[data-language="it"] a[data-lang="it"],html[data-language="en"] a[data-lang=
   .advanced-app-showcase{
     padding:22px;
   }
+}
+
+
+/* ===== v10: definitive bilingual visibility ===== */
+/* Hide only the opposite language. The selected language keeps the
+   correct display type defined by its component (block, inline, flex...). */
+html[data-language="it"] [data-lang="en"],
+html[data-language="en"] [data-lang="it"] {
+  display: none !important;
+}
+
+/* ===== v10: dark security section card contrast ===== */
+.section-dark .feature-card {
+  background: #ffffff !important;
+  color: var(--text) !important;
+}
+.section-dark .feature-card h3,
+.section-dark .feature-card h3[data-lang] {
+  color: var(--text) !important;
+}
+.section-dark .feature-card p,
+.section-dark .feature-card p[data-lang] {
+  color: var(--muted) !important;
+}
+.section-dark .feature-card .app-icon {
+  background: #e9f2f5 !important;
+}
+
+/* Floating hero card must follow the selected language only. */
+.screen-float [data-lang] {
+  visibility: visible;
 }
