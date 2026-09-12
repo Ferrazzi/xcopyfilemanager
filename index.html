@@ -3,10 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light">
 <meta name="theme-color" content="#087f72">
-<title>Xcopy File Manager — Android file manager</title>
-<meta name="description" content="Official website, guide, privacy policy and support for Xcopy File Manager for Android.">
+<meta name="description" content="Xcopy File Manager for Android: dual-panel file management, network and cloud storage, Time Machine, Xcopy Clean, automation, vaults and advanced tools.">
+<title>Xcopy File Manager — Advanced Android file manager</title>
 <link rel="icon" href="xcopy-icon.png">
 <link rel="stylesheet" href="style.css">
 <script defer src="site.js"></script>
@@ -15,144 +14,232 @@
 <header><div class="wrap nav">
 <a class="brand" href="index.html"><img src="xcopy-icon.png" alt="Xcopy File Manager"><span>Xcopy File Manager</span></a>
 <nav class="navlinks">
-<a href="index.html">Home</a>
+<a href="#features"><span data-lang="en">Features</span><span data-lang="it">Funzioni</span></a>
+<a href="#advanced"><span data-lang="en">Advanced</span><span data-lang="it">Avanzate</span></a>
 <a href="guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
 <a href="privacy.html">Privacy</a>
 <a href="support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
 <div class="lang"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="it">IT</button></div>
 </nav>
 </div></header>
-
 <main>
-<section class="hero"><div class="wrap hero-grid">
-<div>
-<span class="eyebrow" data-lang="en">Android dual-panel file manager</span>
-<span class="eyebrow" data-lang="it">File manager Android a doppio pannello</span>
-<h1>Xcopy File Manager</h1>
-<p class="lead" data-lang="en">Local files, USB, NAS, FTP, SFTP/SSH, WebDAV, Google Drive, encrypted vaults, automation and advanced tools in one practical file manager.</p>
-<p class="lead" data-lang="it">File locali, USB, NAS, FTP, SFTP/SSH, WebDAV, Google Drive, cassaforti cifrate, automazioni e strumenti avanzati in un unico file manager.</p>
-<div class="actions">
-<a class="btn" href="https://play.google.com/store/apps/details?id=com.ferra.xcopyfilemanager"><span data-lang="en">Get it on Google Play</span><span data-lang="it">Scarica da Google Play</span></a>
-<a class="btn secondary" href="guide/index.html"><span data-lang="en">Open the guide</span><span data-lang="it">Apri la guida</span></a>
-</div>
-<div class="statbar">
-<div class="stat"><b>2</b><span data-lang="en">independent panels</span><span data-lang="it">pannelli indipendenti</span></div>
-<div class="stat"><b>SMB · FTP · SFTP · WebDAV</b><span data-lang="en">remote protocols</span><span data-lang="it">protocolli remoti</span></div>
-<div class="stat"><b>Google Drive</b><span data-lang="en">cloud integration</span><span data-lang="it">integrazione cloud</span></div>
-<div class="stat"><b>IT / EN</b><span data-lang="en">app and guide</span><span data-lang="it">app e guida</span></div>
-</div>
-</div>
 
-<div class="product-visual">
-  <div class="device-frame landscape">
-    <img src="screenshots/02-home-landscape.png" alt="Xcopy File Manager dual-panel landscape view">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal visible">
+      <span class="eyebrow"><span class="float-dot"></span><span data-lang="en">Advanced Android file manager</span><span data-lang="it">File manager Android avanzato</span></span>
+      <h1>Xcopy<br>File Manager</h1>
+      <p class="lead" data-lang="en">A true dual-panel workspace for local files, USB drives, NAS, FTP, SFTP/SSH, WebDAV and Google Drive — with Time Machine, Xcopy Clean, automation, encrypted vaults and powerful built-in tools.</p>
+      <p class="lead" data-lang="it">Un vero spazio di lavoro a doppio pannello per file locali, USB, NAS, FTP, SFTP/SSH, WebDAV e Google Drive — con Time Machine, Xcopy Clean, automazioni, cassaforti cifrate e potenti strumenti integrati.</p>
+      <div class="hero-pills">
+        <span class="hero-pill">Dual panel</span><span class="hero-pill">NAS / SMB</span><span class="hero-pill">Google Drive</span><span class="hero-pill">Time Machine</span><span class="hero-pill">Xcopy Clean</span>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.ferra.xcopyfilemanager"><span data-lang="en">Get it on Google Play</span><span data-lang="it">Scarica da Google Play</span></a>
+        <a class="btn secondary" href="guide/index.html"><span data-lang="en">Open the guide</span><span data-lang="it">Apri la guida</span></a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal delay-1">
+      <div class="hero-landscape"><img src="screenshots/02-home-landscape.png" alt="Xcopy File Manager dual panel"></div>
+      <div class="float-card float-a parallax-soft"><b data-lang="en">Two independent panels</b><b data-lang="it">Due pannelli indipendenti</b><span data-lang="en">Source and destination always visible</span><span data-lang="it">Sorgente e destinazione sempre visibili</span></div>
+      <div class="float-card float-b parallax-soft"><b>SMB · FTP · SFTP · WebDAV</b><span data-lang="en">Local, network and cloud in one tree</span><span data-lang="it">Locale, rete e cloud nello stesso tree</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="feature-nav">
+  <div class="wrap feature-nav-grid">
+    <a href="#file-manager"><span class="mini-icon">↔</span><span data-lang="en">File Manager</span><span data-lang="it">File Manager</span></a>
+    <a href="#network"><span class="mini-icon">⌁</span><span data-lang="en">Network & Cloud</span><span data-lang="it">Rete & Cloud</span></a>
+    <a href="#safety"><span class="mini-icon">◆</span><span data-lang="en">Security</span><span data-lang="it">Sicurezza</span></a>
+    <a href="#time-machine"><span class="mini-icon">↶</span>Time Machine</a>
+    <a href="#clean"><span class="mini-icon">✦</span>Xcopy Clean</a>
+    <a href="#advanced"><span class="mini-icon">▦</span><span data-lang="en">Advanced Tools</span><span data-lang="it">Strumenti avanzati</span></a>
   </div>
 </div>
-</div></section>
 
-<section class="section-soft"><div class="wrap">
-<h2 data-lang="en">Your files, wherever they are</h2><h2 data-lang="it">I tuoi file, ovunque si trovino</h2>
-<div class="grid">
-<div class="card"><div class="feature-icon">↔</div><h3 data-lang="en">Dual panel</h3><h3 data-lang="it">Doppio pannello</h3><p data-lang="en">Keep source and destination ready at the same time, with independent paths, tree configuration and sorting.</p><p data-lang="it">Tieni sorgente e destinazione pronte contemporaneamente, con percorsi, tree e ordinamenti indipendenti.</p></div>
-<div class="card"><div class="feature-icon">⌂</div><h3 data-lang="en">Local and USB</h3><h3 data-lang="it">Locale e USB</h3><p data-lang="en">Work with Android storage, removable USB drives and installed applications.</p><p data-lang="it">Lavora con memoria Android, unità USB rimovibili e applicazioni installate.</p></div>
-<div class="card"><div class="feature-icon">⌁</div><h3 data-lang="en">Network and cloud</h3><h3 data-lang="it">Rete e cloud</h3><p data-lang="en">SMB/NAS, FTP, SFTP/SSH, WebDAV and Google Drive appear in the same navigation model.</p><p data-lang="it">SMB/NAS, FTP, SFTP/SSH, WebDAV e Google Drive seguono lo stesso modello di navigazione.</p></div>
-<div class="card"><div class="feature-icon">↶</div><h3 data-lang="en">Safer operations</h3><h3 data-lang="it">Operazioni più sicure</h3><p data-lang="en">Operation history, supported Undo actions, Trash and Time Machine help reduce accidental data loss.</p><p data-lang="it">Cronologia, Annulla dove supportato, Cestino e Time Machine aiutano a ridurre le perdite accidentali.</p></div>
-<div class="card"><div class="feature-icon">▣</div><h3 data-lang="en">Built-in tools</h3><h3 data-lang="it">Strumenti integrati</h3><p data-lang="en">Archives, media metadata, PDF, text, hex, databases, checksums, APK analysis and more.</p><p data-lang="it">Archivi, metadati, PDF, testo, hex, database, checksum, analisi APK e altro.</p></div>
-<div class="card"><div class="feature-icon">◆</div><h3 data-lang="en">Vaults and automation</h3><h3 data-lang="it">Cassaforti e automazioni</h3><p data-lang="en">Encrypted vaults and scheduled/background workflows for supported locations.</p><p data-lang="it">Cassaforti cifrate e flussi programmati/in background per le posizioni supportate.</p></div>
-</div></div></section>
+<section id="features" class="section-white">
+  <div class="wrap">
+    <div class="section-kicker" data-lang="en">Everything has a place</div><div class="section-kicker" data-lang="it">Ogni funzione ha il suo posto</div>
+    <h2 data-lang="en">Six clear areas, one consistent interface</h2>
+    <h2 data-lang="it">Sei aree chiare, un'unica interfaccia coerente</h2>
+    <p class="lead" data-lang="en">Xcopy is organized around everyday file work, remote access, protection, recovery, cleanup and specialized tools.</p>
+    <p class="lead" data-lang="it">Xcopy è organizzato attorno al lavoro quotidiano sui file, accesso remoto, protezione, recupero, pulizia e strumenti specializzati.</p>
 
-
-<section><div class="wrap">
-<div class="screenshot-showcase">
-  <div class="screenshot-copy">
-    <span class="kicker" data-lang="en">Real interface</span>
-    <span class="kicker" data-lang="it">Interfaccia reale</span>
-    <h2 data-lang="en">Built around a real dual-panel workflow</h2>
-    <h2 data-lang="it">Pensato attorno a un vero flusso a doppio pannello</h2>
-    <p class="lead" data-lang="en">Xcopy keeps local storage, network locations, cloud services and file tools inside one consistent navigation model. The screenshots below are captured directly from the Android app.</p>
-    <p class="lead" data-lang="it">Xcopy riunisce memoria locale, posizioni di rete, servizi cloud e strumenti per i file in un unico modello di navigazione coerente. Gli screenshot qui sotto provengono direttamente dall'app Android.</p>
-    <span class="screen-note" data-lang="en">Actual Xcopy File Manager 1.2 UI</span>
-    <span class="screen-note" data-lang="it">Interfaccia reale di Xcopy File Manager 1.2</span>
+    <div class="category-grid">
+      <div class="category-card reveal"><div class="iconbox">↔</div><h3 data-lang="en">File management</h3><h3 data-lang="it">Gestione file</h3><p data-lang="en">Two independent panels, tree navigation, copy, move, rename, duplicate, delete, favorites, recent files and USB.</p><p data-lang="it">Due pannelli indipendenti, tree, copia, sposta, rinomina, duplica, elimina, preferiti, file recenti e USB.</p><span class="tag">Dual panel</span></div>
+      <div class="category-card reveal delay-1"><div class="iconbox">⌁</div><h3 data-lang="en">Network & cloud</h3><h3 data-lang="it">Rete & cloud</h3><p data-lang="en">SMB/NAS, FTP, SFTP/SSH, WebDAV and Google Drive follow the same navigation model as local storage.</p><p data-lang="it">SMB/NAS, FTP, SFTP/SSH, WebDAV e Google Drive seguono lo stesso modello delle memorie locali.</p><span class="tag">Remote storage</span></div>
+      <div class="category-card reveal delay-2"><div class="iconbox">◆</div><h3 data-lang="en">Security</h3><h3 data-lang="it">Sicurezza</h3><p data-lang="en">Encrypted vaults, biometric access, protected credentials and encrypted manual settings backup.</p><p data-lang="it">Cassaforti cifrate, biometria, credenziali protette e backup manuale delle impostazioni cifrato.</p><span class="tag">Vaults</span></div>
+      <div class="category-card reveal"><div class="iconbox">↶</div><h3>Time Machine</h3><p data-lang="en">Versioned protection for important folders, exclusions, restore workflows and operation safety.</p><p data-lang="it">Protezione versionata delle cartelle importanti, esclusioni, ripristino e sicurezza delle operazioni.</p><span class="tag">Recovery</span></div>
+      <div class="category-card reveal delay-1"><div class="iconbox">✦</div><h3>Xcopy Clean</h3><p data-lang="en">Find junk, large files, true duplicates and media candidates before choosing what to remove.</p><p data-lang="it">Trova spazzatura, file grandi, duplicati reali e candidati multimediali prima di decidere cosa eliminare.</p><span class="tag">Cleanup</span></div>
+      <div class="category-card reveal delay-2"><div class="iconbox">▦</div><h3 data-lang="en">Advanced tools</h3><h3 data-lang="it">Strumenti avanzati</h3><p data-lang="en">Archives, databases, EXIF, checksums, APK analysis, PDF, hex and specialized file inspection.</p><p data-lang="it">Archivi, database, EXIF, checksum, analisi APK, PDF, hex e ispezione specializzata dei file.</p><span class="tag">Power tools</span></div>
+    </div>
   </div>
-  <div class="device-frame">
-    <img src="screenshots/01-home-portrait.png" alt="Xcopy File Manager portrait home">
+</section>
+
+<section id="file-manager" class="section-soft">
+  <div class="wrap feature-split">
+    <div class="feature-copy reveal">
+      <div class="section-kicker" data-lang="en">Core workflow</div><div class="section-kicker" data-lang="it">Flusso principale</div>
+      <h2 data-lang="en">A dual-panel workspace that stays out of your way</h2>
+      <h2 data-lang="it">Un doppio pannello che resta sempre sotto controllo</h2>
+      <p class="lead" data-lang="en">Keep two locations open at once. Each panel remembers its own path, tree visibility, node order and configuration.</p>
+      <p class="lead" data-lang="it">Tieni aperte due posizioni contemporaneamente. Ogni pannello ricorda percorso, visibilità del tree, ordine dei nodi e configurazione.</p>
+      <div class="feature-list">
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Independent left and right panel navigation</span><span data-lang="it">Navigazione indipendente tra pannello sinistro e destro</span></div>
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Local storage, Root/Shizuku, recent files, favorites and USB</span><span data-lang="it">Memoria locale, Root/Shizuku, recenti, preferiti e USB</span></div>
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Copy, move, rename, duplicate, path tools and sorting</span><span data-lang="it">Copia, sposta, rinomina, duplica, strumenti percorso e ordinamento</span></div>
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Operation history and supported Undo actions</span><span data-lang="it">Cronologia operazioni e Annulla dove supportato</span></div>
+      </div>
+    </div>
+    <div class="feature-media reveal delay-1">
+      <div class="phone-frame"><img src="screenshots/01-home-portrait.png" alt="Xcopy home portrait"></div>
+      <div class="screen-card"><b data-lang="en">Tree navigation</b><b data-lang="it">Navigazione ad albero</b><br><span data-lang="en">Local, network, cloud and tools share the same mental model.</span><span data-lang="it">Locale, rete, cloud e strumenti seguono lo stesso modello.</span></div>
+    </div>
   </div>
-</div>
-</div></section>
+</section>
 
-<section class="section-soft"><div class="wrap">
-<h2 data-lang="en">Explore the interface</h2>
-<h2 data-lang="it">Esplora l'interfaccia</h2>
-
-<div class="real-gallery">
-  <div class="real-shot landscape">
-    <img src="screenshots/02-home-landscape.png" alt="Dual panel landscape">
-    <h3 data-lang="en">Dual panel in landscape</h3>
-    <h3 data-lang="it">Doppio pannello in orizzontale</h3>
-    <p data-lang="en">Two independent locations visible at the same time, with the central action bar always available.</p>
-    <p data-lang="it">Due posizioni indipendenti visibili contemporaneamente, con la barra azioni centrale sempre disponibile.</p>
+<section id="network" class="section-white">
+  <div class="wrap feature-split reverse">
+    <div class="feature-copy reveal">
+      <div class="section-kicker" data-lang="en">Network & cloud</div><div class="section-kicker" data-lang="it">Rete & cloud</div>
+      <h2 data-lang="en">Remote storage feels like another disk</h2>
+      <h2 data-lang="it">Gli archivi remoti sembrano un altro disco</h2>
+      <p class="lead" data-lang="en">Open NAS and FTP nodes directly in the tree, then work with remote files through the same actions used locally.</p>
+      <p class="lead" data-lang="it">Apri NAS e FTP direttamente nel tree e lavora sui file remoti con le stesse azioni usate in locale.</p>
+      <div class="feature-list">
+        <div class="feature-row"><span class="check">✓</span><span>SMB / LAN / NAS</span></div>
+        <div class="feature-row"><span class="check">✓</span><span>FTP</span></div>
+        <div class="feature-row"><span class="check">✓</span><span>SFTP / SSH</span></div>
+        <div class="feature-row"><span class="check">✓</span><span>WebDAV</span></div>
+        <div class="feature-row"><span class="check">✓</span><span>Google Drive</span></div>
+      </div>
+    </div>
+    <div class="feature-media reveal delay-1">
+      <div class="phone-frame"><img src="screenshots/03-nas.png" alt="NAS tree"></div>
+      <div class="screen-card"><b>NAS / LAN</b><br><span data-lang="en">Saved network locations expand directly in the tree.</span><span data-lang="it">Le posizioni di rete salvate si espandono direttamente nel tree.</span></div>
+    </div>
   </div>
+</section>
 
-  <div class="real-shot">
-    <img src="screenshots/01-home-portrait.png" alt="Portrait home">
-    <h3 data-lang="en">Portrait navigation</h3>
-    <h3 data-lang="it">Navigazione in verticale</h3>
-    <p data-lang="en">The same tree-based navigation adapts to smaller screens.</p>
-    <p data-lang="it">La stessa navigazione ad albero si adatta agli schermi più stretti.</p>
+<section id="safety" class="section-dark">
+  <div class="wrap">
+    <div class="section-kicker" data-lang="en">Protection & recovery</div><div class="section-kicker" data-lang="it">Protezione & recupero</div>
+    <h2 data-lang="en">Designed to reduce costly mistakes</h2>
+    <h2 data-lang="it">Pensato per ridurre gli errori costosi</h2>
+    <p class="lead" data-lang="en">Xcopy combines several layers of protection instead of relying on a single “Are you sure?” dialog.</p>
+    <p class="lead" data-lang="it">Xcopy combina più livelli di protezione invece di affidarsi a un solo dialog “Sei sicuro?”.</p>
+    <div class="category-grid" style="margin-top:32px">
+      <div class="category-card reveal" style="background:#18343e;border-color:#294852;color:white"><div class="iconbox">↶</div><h3 data-lang="en">Operation history</h3><h3 data-lang="it">Cronologia operazioni</h3><p data-lang="en">Review file operations and undo supported actions when the previous state can be restored.</p><p data-lang="it">Rivedi le operazioni e annulla quelle supportate quando è possibile ripristinare lo stato precedente.</p></div>
+      <div class="category-card reveal delay-1" style="background:#18343e;border-color:#294852;color:white"><div class="iconbox">▰</div><h3 data-lang="en">Trash</h3><h3 data-lang="it">Cestino</h3><p data-lang="en">Recover eligible deleted items instead of losing them immediately.</p><p data-lang="it">Recupera gli elementi eliminati idonei invece di perderli immediatamente.</p></div>
+      <div class="category-card reveal delay-2" style="background:#18343e;border-color:#294852;color:white"><div class="iconbox">◆</div><h3 data-lang="en">Encrypted vaults</h3><h3 data-lang="it">Cassaforti cifrate</h3><p data-lang="en">Protect selected files with encrypted vaults, password changes and optional biometrics.</p><p data-lang="it">Proteggi file selezionati con cassaforti cifrate, cambio password e biometria opzionale.</p></div>
+    </div>
   </div>
+</section>
 
-  <div class="real-shot">
-    <img src="screenshots/03-nas.png" alt="NAS connection in Xcopy">
-    <h3>NAS / LAN</h3>
-    <p data-lang="en">Network shares appear directly in the tree and can be expanded like local locations.</p>
-    <p data-lang="it">Le condivisioni di rete compaiono direttamente nel tree e si espandono come le posizioni locali.</p>
+<section id="time-machine" class="section-white">
+  <div class="wrap feature-split">
+    <div class="feature-copy reveal">
+      <div class="section-kicker">Time Machine</div>
+      <h2 data-lang="en">Versioned protection for the folders that matter</h2>
+      <h2 data-lang="it">Protezione versionata per le cartelle importanti</h2>
+      <p class="lead" data-lang="en">Time Machine adds a recovery-oriented layer above normal copy operations, with configuration, exclusions and restore-oriented workflows.</p>
+      <p class="lead" data-lang="it">Time Machine aggiunge uno strato orientato al recupero sopra le normali operazioni di copia, con configurazione, esclusioni e flussi di ripristino.</p>
+      <div class="feature-list">
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Protect selected folders</span><span data-lang="it">Proteggi cartelle selezionate</span></div>
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Configure exclusions</span><span data-lang="it">Configura esclusioni</span></div>
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Restore earlier states when available</span><span data-lang="it">Ripristina stati precedenti quando disponibili</span></div>
+      </div>
+      <div class="actions"><a class="btn secondary" href="guide/index.html"><span data-lang="en">Read the guide</span><span data-lang="it">Leggi la guida</span></a></div>
+    </div>
+    <div class="feature-media reveal delay-1">
+      <div class="category-card" style="min-height:320px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,#edf7f6,#fff)">
+        <div class="iconbox" style="width:62px;height:62px;font-size:1.8rem">↶</div>
+        <h3 style="font-size:1.45rem">Time Machine</h3>
+        <p data-lang="en">A dedicated recovery layer for important folders. Screenshot slot ready for the real Time Machine UI.</p>
+        <p data-lang="it">Uno strato di recupero dedicato alle cartelle importanti. Spazio già pronto per lo screenshot reale di Time Machine.</p>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="real-shot">
-    <img src="screenshots/04-ftp.png" alt="FTP connection in Xcopy">
-    <h3>FTP</h3>
-    <p data-lang="en">FTP servers are managed from the same navigation tree, including saved connections and server mode.</p>
-    <p data-lang="it">I server FTP si gestiscono dallo stesso tree, comprese connessioni salvate e modalità server.</p>
+<section id="clean" class="section-soft">
+  <div class="wrap feature-split reverse">
+    <div class="feature-copy reveal">
+      <div class="section-kicker">Xcopy Clean</div>
+      <h2 data-lang="en">Find what occupies space before deleting anything</h2>
+      <h2 data-lang="it">Trova cosa occupa spazio prima di eliminare qualsiasi cosa</h2>
+      <p class="lead" data-lang="en">Xcopy Clean scans and presents candidates. Deletion remains a separate user decision.</p>
+      <p class="lead" data-lang="it">Xcopy Clean scansiona e presenta i candidati. L'eliminazione resta una decisione separata dell'utente.</p>
+      <div class="feature-list">
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Junk files and large files</span><span data-lang="it">File spazzatura e file grandi</span></div>
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">True duplicates using size filtering and real hash verification</span><span data-lang="it">Duplicati reali con filtro per dimensione e verifica hash reale</span></div>
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Photo, video and audio duplicate/similar workflows</span><span data-lang="it">Flussi per foto, video e audio duplicati/simili</span></div>
+        <div class="feature-row"><span class="check">✓</span><span data-lang="en">Preview before removal</span><span data-lang="it">Anteprima prima della rimozione</span></div>
+      </div>
+    </div>
+    <div class="feature-media reveal delay-1">
+      <div class="phone-frame"><img src="screenshots/05-xcopy-clean.png" alt="Xcopy Clean"></div>
+    </div>
   </div>
+</section>
 
-  <div class="real-shot">
-    <img src="screenshots/05-xcopy-clean.png" alt="Xcopy Clean">
-    <h3>Xcopy Clean</h3>
-    <p data-lang="en">Scan for junk files, large files, duplicates and other candidates before deciding what to remove.</p>
-    <p data-lang="it">Scansiona file spazzatura, file grandi, duplicati e altri candidati prima di decidere cosa rimuovere.</p>
+<section id="advanced" class="section-white">
+  <div class="wrap">
+    <div class="section-kicker" data-lang="en">Advanced toolbox</div><div class="section-kicker" data-lang="it">Strumenti avanzati</div>
+    <h2 data-lang="en">More than a file browser</h2>
+    <h2 data-lang="it">Molto più di un semplice file browser</h2>
+    <p class="lead" data-lang="en">Open, inspect and work with specialized file formats without constantly jumping between apps.</p>
+    <p class="lead" data-lang="it">Apri, ispeziona e lavora con formati specializzati senza passare continuamente da un'app all'altra.</p>
+
+    <div class="tool-grid">
+      <div class="tool-card reveal"><div class="tool-icon">🗜</div><h3 data-lang="en">Archive manager</h3><h3 data-lang="it">Gestore archivi</h3><p>ZIP, RAR and archive workflows, including remote files where supported.</p></div>
+      <div class="tool-card reveal delay-1"><div class="tool-icon">◫</div><h3>SQLite / MDB</h3><p data-lang="en">Database explorer/editor for supported SQLite and Microsoft Access files.</p><p data-lang="it">Explorer/editor database per SQLite e Microsoft Access supportati.</p></div>
+      <div class="tool-card reveal delay-2"><div class="tool-icon">⌁</div><h3>HEX Viewer / Editor</h3><p data-lang="en">Inspect raw bytes for files that need low-level analysis.</p><p data-lang="it">Ispeziona i byte grezzi per file che richiedono analisi a basso livello.</p></div>
+      <div class="tool-card reveal delay-3"><div class="tool-icon">▤</div><h3>PDF Viewer / Editor</h3><p data-lang="en">Open and work with PDF documents directly inside Xcopy.</p><p data-lang="it">Apri e lavora con documenti PDF direttamente in Xcopy.</p></div>
+
+      <div class="tool-card reveal"><div class="tool-icon">◎</div><h3>EXIF Editor</h3><p data-lang="en">View and edit supported photo metadata.</p><p data-lang="it">Visualizza e modifica i metadati supportati delle foto.</p></div>
+      <div class="tool-card reveal delay-1"><div class="tool-icon">#</div><h3 data-lang="en">Advanced checksum</h3><h3 data-lang="it">Checksum avanzato</h3><p data-lang="en">Calculate and verify hashes for integrity checks and duplicate workflows.</p><p data-lang="it">Calcola e verifica hash per integrità e gestione duplicati.</p></div>
+      <div class="tool-card reveal delay-2"><div class="tool-icon">APK</div><h3>APK Analyzer</h3><p data-lang="en">Inspect APK information and installed/application package details.</p><p data-lang="it">Analizza APK e dettagli dei pacchetti/app installate.</p></div>
+      <div class="tool-card reveal delay-3"><div class="tool-icon">▣</div><h3 data-lang="en">Media tools</h3><h3 data-lang="it">Strumenti media</h3><p data-lang="en">Image viewer, video playback and file-specific utilities.</p><p data-lang="it">Viewer immagini, riproduzione video e utilità specifiche per file.</p></div>
+    </div>
   </div>
+</section>
 
-  <div class="real-shot">
-    <img src="screenshots/06-tools-menu.png" alt="Xcopy tools menu">
-    <h3 data-lang="en">Tools and utilities</h3>
-    <h3 data-lang="it">Strumenti e utilità</h3>
-    <p data-lang="en">Quick access to Xcopy Clean, automation, notes, operation history, settings and the guide.</p>
-    <p data-lang="it">Accesso rapido a Xcopy Clean, automazioni, note, cronologia operazioni, impostazioni e guida.</p>
+<section class="section-soft">
+  <div class="wrap">
+    <div class="section-kicker" data-lang="en">Actual interface</div><div class="section-kicker" data-lang="it">Interfaccia reale</div>
+    <h2 data-lang="en">A closer look, without oversized screenshots</h2>
+    <h2 data-lang="it">Uno sguardo più da vicino, senza screenshot giganteschi</h2>
+    <div class="gallery-strip">
+      <div class="gallery-shot landscape reveal"><img src="screenshots/02-home-landscape.png" alt="Landscape"><div class="overlay" data-lang="en">Dual-panel landscape</div><div class="overlay" data-lang="it">Doppio pannello landscape</div></div>
+      <div class="gallery-shot reveal delay-1"><img src="screenshots/03-nas.png" alt="NAS"><div class="overlay">NAS / LAN</div></div>
+      <div class="gallery-shot reveal delay-2"><img src="screenshots/04-ftp.png" alt="FTP"><div class="overlay">FTP</div></div>
+      <div class="gallery-shot reveal delay-3"><img src="screenshots/06-tools-menu.png" alt="Tools"><div class="overlay" data-lang="en">Tools menu</div><div class="overlay" data-lang="it">Menu strumenti</div></div>
+    </div>
   </div>
-</div>
-</div></section>
+</section>
 
+<section class="section-white">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div>
+        <div class="section-kicker" style="color:#75d2c4" data-lang="en">Documentation included</div>
+        <div class="section-kicker" style="color:#75d2c4" data-lang="it">Documentazione inclusa</div>
+        <h2 data-lang="en">Need details? The complete guide is already online.</h2>
+        <h2 data-lang="it">Ti servono dettagli? La guida completa è già online.</h2>
+        <p data-lang="en">Browse feature-by-feature documentation for navigation, connections, vaults, automation, backup, advanced tools and troubleshooting.</p>
+        <p data-lang="it">Consulta la documentazione funzione per funzione per navigazione, connessioni, cassaforti, automazioni, backup, strumenti avanzati e risoluzione problemi.</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="guide/index.html"><span data-lang="en">Open guide</span><span data-lang="it">Apri guida</span></a>
+        <a class="btn ghost-dark" href="support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="section-soft"><div class="wrap hero-grid">
-<div>
-<h2 data-lang="en">A complete guide, not a changelog</h2><h2 data-lang="it">Una guida completa, non un changelog</h2>
-<p class="lead" data-lang="en">The website guide is generated from the same user-facing documentation included in Xcopy 1.2. It explains how features work, how to use them, their limits and relevant security notes.</p>
-<p class="lead" data-lang="it">La guida del sito deriva dalla stessa documentazione rivolta all'utente inclusa in Xcopy 1.2. Spiega come funzionano le funzioni, come usarle, i limiti e le note di sicurezza utili.</p>
-<div class="actions"><a class="btn" href="guide/index.html"><span data-lang="en">Browse all guide articles</span><span data-lang="it">Sfoglia tutti gli articoli</span></a></div>
-</div>
-<div class="hero-card"><h3 data-lang="en">Guide topics</h3><h3 data-lang="it">Argomenti della guida</h3>
-<ul data-lang="en"><li>Getting started and navigation</li><li>File operations and archives</li><li>Remote connections and sharing</li><li>Vaults, backups and security</li><li>Editors, Time Machine and automation</li><li>Troubleshooting</li></ul>
-<ul data-lang="it"><li>Primi passi e navigazione</li><li>Operazioni file e archivi</li><li>Connessioni remote e condivisione</li><li>Cassaforti, backup e sicurezza</li><li>Editor, Time Machine e automazioni</li><li>Risoluzione problemi</li></ul>
-</div>
-</div></section>
-
-<section><div class="wrap prose">
-<h2 data-lang="en">Google Drive and privacy</h2><h2 data-lang="it">Google Drive e privacy</h2>
-<p data-lang="en">Google Drive is optional and is connected only after the user authorizes a Google account. Xcopy uses Drive access to provide file-manager operations requested by the user.</p>
-<p data-lang="it">Google Drive è facoltativo e viene collegato solo dopo che l'utente autorizza un Account Google. Xcopy usa l'accesso a Drive per fornire le operazioni da file manager richieste dall'utente.</p>
-<div class="notice"><p data-lang="en"><strong>Limited Use.</strong> Information obtained through Google APIs is handled in accordance with the Google API Services User Data Policy and its Limited Use requirements.</p><p data-lang="it"><strong>Uso limitato.</strong> Le informazioni ottenute tramite le API Google vengono gestite nel rispetto della Google API Services User Data Policy e dei relativi requisiti Limited Use.</p></div>
-<p><a href="privacy.html"><span data-lang="en">Read the privacy policy</span><span data-lang="it">Leggi l'informativa privacy</span></a></p>
-</div></section>
 </main>
 
 <footer><div class="wrap footer-grid">
