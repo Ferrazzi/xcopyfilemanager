@@ -28,15 +28,19 @@
           <div class="kicker" data-lang="en">Xcopy Guide</div>
         </div>
       </div>
+      <div class="guide-search guide-search-inline">
+        <input data-search-tree type="search" placeholder="Cerca nella guida / Search the guide">
+      </div>
     </div>
   </section>
+
   <section class="guide-article-wrap">
     <div class="wrap guide-article-layout">
       <aside class="guide-tree-card guide-tree-sticky">
         <div class="guide-tree-card-title">
           <a class="tree-back" href="index.html">
-            <span data-lang="it">← Tutta la guida</span>
-            <span data-lang="en">← All guide</span>
+            <span data-lang="it">← Guida</span>
+            <span data-lang="en">← Guide</span>
           </a>
         </div>
         <div class="guide-tree" data-guide-tree>
@@ -47,7 +51,6 @@
       <span data-lang="it">Per iniziare</span>
       <span data-lang="en">Getting started</span>
     </span>
-    <span class="tree-count">4</span>
   </summary>
   <div class="tree-children">
 
@@ -102,7 +105,6 @@
       <span data-lang="it">File e cartelle</span>
       <span data-lang="en">Files and folders</span>
     </span>
-    <span class="tree-count">6</span>
   </summary>
   <div class="tree-children">
 
@@ -179,7 +181,6 @@
       <span data-lang="it">Rete e condivisione</span>
       <span data-lang="en">Network and sharing</span>
     </span>
-    <span class="tree-count">5</span>
   </summary>
   <div class="tree-children">
 
@@ -245,7 +246,6 @@
       <span data-lang="it">Sicurezza e dati</span>
       <span data-lang="en">Security and data</span>
     </span>
-    <span class="tree-count">4</span>
   </summary>
   <div class="tree-children">
 
@@ -300,7 +300,6 @@
       <span data-lang="it">Strumenti</span>
       <span data-lang="en">Tools</span>
     </span>
-    <span class="tree-count">7</span>
   </summary>
   <div class="tree-children">
 
@@ -388,7 +387,6 @@
       <span data-lang="it">Aiuto</span>
       <span data-lang="en">Help</span>
     </span>
-    <span class="tree-count">1</span>
   </summary>
   <div class="tree-children">
 
@@ -404,10 +402,12 @@
     </a>
 </div></details></div>
       </aside>
-      <div class="guide-article-main"><div class="guide-article">
+      <div class="guide-article-main">
+        <div class="guide-article">
 <div data-lang="en"><article><h1>Troubleshooting</h1><p class="intro">Quick checks when a source, server or operation does not behave as expected.</p><nav class="toc"><b>On this page</b><a href="#network">Network</a><a href="#servers">Xcopy servers</a><a href="#storage">Storage and USB</a><a href="#vault">Vault</a></nav><section id="network"><h2>Network</h2><ul><li>Confirm devices are on the same LAN.</li><li>Check local-network permission when Android requires it.</li><li>For SMB/FTP/SSH verify IP/host, port and credentials.</li><li>For DLNA collapse/expand the node to run discovery again.</li></ul></section><section id="servers"><h2>Xcopy servers</h2><ul><li>Check the foreground notification: Android must show it while the service is active.</li><li>Use Quick Settings or launcher shortcuts to toggle without opening Xcopy.</li><li>If a tile is missing, add it from Android's tile editor or the Settings request helper.</li></ul></section><section id="storage"><h2>Storage and USB</h2><ul><li>For protected folders verify Shizuku/root or SAF authorization.</li><li>Do not disconnect USB during active operations.</li><li>If a list does not show a change immediately, use Refresh or leave and re-enter the folder.</li></ul></section><section id="vault"><h2>Vault</h2><ul><li>Biometrics are per-vault, not global.</li><li>Keep recovery codes outside the device.</li><li>If all recovery credentials are lost, encryption has no bypass.</li></ul></section><div class="related"><h2>Related articles</h2><a href="security.html">→ Security and privacy</a><a href="shizuku.html">→ Shizuku and root</a><a href="remote.html">→ Remote connections</a></div></article></div>
 <div data-lang="it"><article><h1>Risoluzione problemi</h1><p class="intro">Controlli rapidi quando una sorgente, un server o un’operazione non funziona come previsto.</p><nav class="toc"><b>In questa pagina</b><a href="#network">Rete</a><a href="#servers">Server Xcopy</a><a href="#storage">Storage e USB</a><a href="#vault">Cassaforte</a></nav><section id="network"><h2>Rete</h2><ul><li>Verifica che i dispositivi siano sulla stessa LAN.</li><li>Controlla il permesso rete locale quando richiesto da Android.</li><li>Per SMB/FTP/SSH verifica IP/host, porta e credenziali.</li><li>Per DLNA espandi di nuovo il nodo per rilanciare la ricerca.</li></ul></section><section id="servers"><h2>Server Xcopy</h2><ul><li>Controlla la notifica foreground: se il servizio è attivo, Android deve mostrarla.</li><li>Usa Quick Settings o shortcut launcher per ON/OFF senza aprire Xcopy.</li><li>Se un riquadro non compare, aggiungilo dal pannello Modifica riquadri Android o dalla richiesta in Impostazioni.</li></ul></section><section id="storage"><h2>Storage e USB</h2><ul><li>Se una cartella è protetta, verifica Shizuku/root o autorizzazione SAF.</li><li>Non scollegare USB durante operazioni attive.</li><li>Se una lista non mostra subito una modifica, usa Aggiorna oppure esci e rientra nella cartella.</li></ul></section><section id="vault"><h2>Cassaforte</h2><ul><li>La biometria è per singola cassaforte, non globale.</li><li>Conserva il codice di recupero fuori dal dispositivo.</li><li>Se perdi tutte le credenziali di recupero non è previsto un bypass della cifratura.</li></ul></section><div class="related"><h2>Articoli correlati</h2><a href="security.html">→ Sicurezza e privacy</a><a href="shizuku.html">→ Shizuku e root</a><a href="remote.html">→ Connessioni remote</a></div></article></div>
-</div></div>
+</div>
+      </div>
     </div>
   </section>
 </main>

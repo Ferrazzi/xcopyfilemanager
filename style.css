@@ -436,3 +436,141 @@ html[data-language="it"] a[data-lang="it"],html[data-language="en"] a[data-lang=
   .tree-group summary{padding:9px 12px}
   .tree-children{margin-left:18px;padding-left:27px}
 }
+
+
+/* ===== v9: guide opens directly as tree + article ===== */
+.tree-count{display:none!important}
+
+.tree-group summary{
+  grid-template-columns:20px minmax(0,1fr)!important;
+  column-gap:10px!important;
+}
+.tree-label{
+  display:flex!important;
+  align-items:center!important;
+  min-height:32px;
+}
+.guide-tree-card-title{
+  min-height:52px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.guide-search-inline{
+  max-width:560px;
+  margin-top:14px;
+}
+.guide-top-compact{
+  padding:20px 0 16px!important;
+}
+.guide-article-layout{
+  grid-template-columns:280px minmax(0,1fr)!important;
+  gap:28px!important;
+}
+.guide-tree-sticky{
+  top:88px!important;
+}
+.tree-children{
+  margin-left:20px!important;
+  padding-left:27px!important;
+}
+.tree-children:before{
+  left:12px!important;
+}
+.tree-line{
+  left:-15px!important;
+  width:15px!important;
+}
+.tree-bullet{
+  left:-19px!important;
+}
+
+/* ===== v9: more real app screenshots, integrated in sections ===== */
+.network-screens{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  min-height:560px;
+}
+.phone-shot-small{
+  width:215px!important;
+  max-width:42vw!important;
+  position:relative;
+}
+.phone-shot-offset{
+  transform:translateY(30px);
+}
+.phone-shot-offset:hover{
+  transform:translateY(24px) rotate(.5deg)!important;
+}
+.screen-caption{
+  position:absolute;
+  left:50%;
+  bottom:-14px;
+  transform:translateX(-50%);
+  padding:5px 10px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid #c7d9e0;
+  color:#45636e;
+  font-size:.72rem;
+  font-weight:850;
+  box-shadow:0 7px 18px rgba(38,69,81,.09);
+  white-space:nowrap;
+}
+
+.advanced-app-showcase{
+  margin-top:38px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 245px;
+  gap:42px;
+  align-items:center;
+  background:linear-gradient(145deg,#eef5f7,#f9fbfc);
+  border:1px solid #c6d8df;
+  border-radius:22px;
+  padding:28px 34px;
+}
+.advanced-screen-copy h3{
+  font-size:1.5rem;
+  margin-bottom:10px;
+}
+.advanced-screen-copy p{
+  color:#607986;
+  max-width:620px;
+}
+.phone-shot-tools{
+  width:210px!important;
+  justify-self:end;
+}
+
+@media(max-width:980px){
+  .guide-article-layout{
+    grid-template-columns:1fr!important;
+  }
+  .network-screens{
+    min-height:auto;
+    padding:16px 0 34px;
+  }
+  .advanced-app-showcase{
+    grid-template-columns:1fr;
+  }
+  .phone-shot-tools{
+    justify-self:center;
+  }
+}
+@media(max-width:620px){
+  .network-screens{
+    gap:10px;
+  }
+  .phone-shot-small{
+    width:45vw!important;
+    max-width:190px!important;
+  }
+  .phone-shot-offset{
+    transform:translateY(18px);
+  }
+  .advanced-app-showcase{
+    padding:22px;
+  }
+}
