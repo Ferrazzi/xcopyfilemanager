@@ -1,12 +1,16 @@
-# Xcopy File Manager website v7
+# Xcopy File Manager website v8 — V6 corrected
 
-Changes:
-- removed the entire "Interfaccia reale / Uno sguardo più da vicino" section
-- guide redesigned as an expandable tree, like the Android app
-- categories are parent nodes and articles are child nodes
-- guide tree remains available while reading articles on desktop
-- mobile responsive tree
-- tree search opens matching categories automatically
-- keeps app-style icons and professional animations
+This version starts from V6.
 
-Deploy all files to the repository root.
+Changes only:
+- restored the app screenshots that worked well:
+  - landscape dual-panel hero
+  - portrait File Manager
+  - NAS / Network
+  - Xcopy Clean
+- removed the separate "Interfaccia reale / Uno sguardo più da vicino" gallery
+- kept icons only inside feature/tool cards
+- guide changed to an app-like expandable tree
+- no large guide icons
+- persistent compact guide tree while reading articles on desktop
+- professional V6 animations preserved

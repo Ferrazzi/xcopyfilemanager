@@ -58,19 +58,24 @@ document.addEventListener('DOMContentLoaded',()=>{
     input.addEventListener('input',()=>{
       const q=(input.value||'').trim().toLowerCase();
       const lang=document.documentElement.getAttribute('data-language')||'en';
+
       document.querySelectorAll('.guide-tree .tree-group').forEach(group=>{
-        let matched=false;
+        let childMatch=false;
+
         group.querySelectorAll('.tree-node').forEach(node=>{
-          const span=node.querySelector('[data-lang="'+lang+'"]');
-          const text=(span?span.textContent:node.textContent).toLowerCase();
-          const show=!q||text.includes(q);
-          node.classList.toggle('tree-hidden',!show);
-          if(show) matched=true;
+          const title=node.querySelector('.tree-copy b[data-lang="'+lang+'"]');
+          const desc=node.querySelector('.tree-copy small[data-lang="'+lang+'"]');
+          const text=((title?title.textContent:'')+' '+(desc?desc.textContent:'')).toLowerCase();
+          const visible=!q || text.includes(q);
+          node.classList.toggle('tree-hidden',!visible);
+          if(visible) childMatch=true;
         });
-        const title=group.querySelector('.tree-title [data-lang="'+lang+'"]');
-        const titleMatch=title && title.textContent.toLowerCase().includes(q);
-        if(q && (matched||titleMatch)) group.open=true;
-        group.classList.toggle('tree-hidden', !!q && !matched && !titleMatch);
+
+        const cat=group.querySelector('.tree-label [data-lang="'+lang+'"]');
+        const catMatch=!!(q && cat && cat.textContent.toLowerCase().includes(q));
+
+        if(q && (childMatch || catMatch)) group.open=true;
+        group.classList.toggle('tree-hidden', !!q && !childMatch && !catMatch);
       });
     });
   });
