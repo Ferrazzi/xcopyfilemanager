@@ -1,46 +1,33 @@
-<!doctype html>
-<html lang="en" data-language="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#087f72">
-<title>Time Machine — Xcopy File Manager</title>
-<meta name="description" content="Official website, guide, privacy policy and support for Xcopy File Manager for Android.">
+<!doctype html><html lang="en" data-language="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#078A79">
+<title>Time_Machine — Xcopy Guide</title>
 <link rel="icon" href="../xcopy-icon.png">
-<link rel="stylesheet" href="../style.css">
-<script defer src="../site.js"></script>
-</head>
-<body>
+<link rel="stylesheet" href="../style.css"><script defer src="../site.js"></script>
+</head><body>
 <header><div class="wrap nav">
 <a class="brand" href="../index.html"><img src="../xcopy-icon.png" alt="Xcopy File Manager"><span>Xcopy File Manager</span></a>
 <nav class="navlinks">
-<a href="../index.html">Home</a>
-<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../index.html#features"><span data-lang="it">Funzioni</span><span data-lang="en">Features</span></a>
+<a href="../index.html#advanced"><span data-lang="it">Avanzate</span><span data-lang="en">Advanced</span></a>
+<a href="../guide/index.html"><span data-lang="it">Guida</span><span data-lang="en">Guide</span></a>
 <a href="../privacy.html">Privacy</a>
-<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
-<div class="lang"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="it">IT</button></div>
-</nav>
-</div></header>
-
-<main><section><div class="wrap guide-layout">
-<aside class="guide-side"><a href="index.html">← <span data-lang="en">All guide articles</span><span data-lang="it">Tutti gli articoli</span></a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Per iniziare</div><a href="getting_started.html">Primi passi</a><a href="tree.html">Albero di navigazione</a><a href="toolbar.html">Barra strumenti verticale</a><a href="selection.html">Selezione multipla</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">File e cartelle</div><a href="copy_move.html">Copiare, spostare e duplicare</a><a href="hidden_sort.html">File nascosti e ordinamento</a><a href="search.html">Ricerca</a><a href="details.html">Dettagli, dimensioni e conteggi</a><a href="archives_trash.html">Archivi e Cestino</a><a href="apps_usb.html">App e dispositivi USB</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Rete e condivisione</div><a href="remote.html">Connessioni remote</a><a href="wifi.html">Trasferimento file Wi‑Fi</a><a href="ftp_server.html">Server FTP interno</a><a href="ssh_server.html">Server SSH/SFTP interno</a><a href="dlna.html">DLNA / UPnP</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Sicurezza e dati</div><a href="vaults.html">Cassaforti</a><a href="backup.html">Backup e ripristino dell’app</a><a href="security.html">Sicurezza e privacy</a><a href="shizuku.html">Shizuku e root</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Strumenti</div><a href="notes.html">Gestore Note</a><a href="editors.html">Viewer ed editor integrati</a><a href="metadata.html">Metadati audio e video</a><a href="time_machine.html">Time Machine</a><a href="automation.html">Automazioni</a><a href="shortcuts.html">Shortcut, Quick Settings e widget</a><a href="settings.html">Impostazioni</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Aiuto</div><a href="troubleshooting.html">Risoluzione problemi</a></aside>
-<div class="guide-main">
-<div class="breadcrumb"><a href="index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a> / <span data-lang="en">Time Machine</span><span data-lang="it">Time Machine</span></div>
-<div class="guide-article">
+<a href="../support.html"><span data-lang="it">Supporto</span><span data-lang="en">Support</span></a>
+<div class="lang"><button data-set-lang="en">EN</button><button data-set-lang="it">IT</button></div>
+</nav></div></header>
+<main class="guide-shell">
+<section class="guide-top"><div class="wrap">
+<div class="guide-titlebar"><a class="guide-back" href="index.html">←</a><div><div class="kicker" data-lang="it">Guida Xcopy</div><div class="kicker" data-lang="en">Xcopy Guide</div><h1 data-lang="it">Articolo guida</h1><h1 data-lang="en">Guide article</h1></div></div>
+</div></section>
+<section class="guide-article-wrap"><div class="wrap"><div class="guide-article">
 <div data-lang="en"><article><h1>Time Machine</h1><p class="intro">Automatic pre-change versions with retention limits, management and exclusions.</p><nav class="toc"><b>On this page</b><a href="#default">Default state</a><a href="#config">Configuration</a><a href="#exclusions">Exclusions</a><a href="#restore">Manage and restore</a></nav><section id="default"><h2>Default state</h2><p>Time Machine is <b>off by default</b>. Enable it in Settings only if you want Xcopy to save previous versions for configured operations.</p></section><section id="config"><h2>Configuration</h2><p>Configure retention, versions per item, storage limit, maximum item size and which operations create snapshots.</p></section><section id="exclusions"><h2>Exclusions</h2><p>In <b>Settings → Time Machine → Exclusions</b> add files/folders to ignore. Excluding a folder also excludes all descendants, even when a parent folder is captured in a snapshot.</p></section><section id="restore"><h2>Manage and restore</h2><p>Time Machine management lets you inspect versions, restore and protect important snapshots. Exclusions apply to future snapshots and do not automatically delete existing versions.</p></section><div class="related"><h2>Related articles</h2><a href="backup.html">→ Backup and restore</a><a href="automation.html">→ Automation</a><a href="editors.html">→ Viewers and editors</a></div></article></div>
 <div data-lang="it"><article><h1>Time Machine</h1><p class="intro">Versioni automatiche prima delle modifiche, con limiti, gestione ed esclusioni.</p><nav class="toc"><b>In questa pagina</b><a href="#default">Stato iniziale</a><a href="#config">Configurazione</a><a href="#exclusions">Esclusioni</a><a href="#restore">Gestire e ripristinare</a></nav><section id="default"><h2>Stato iniziale</h2><p>Time Machine è <b>disattivato di default</b>. Abilitalo dalle Impostazioni solo se vuoi che Xcopy salvi versioni precedenti per le operazioni configurate.</p></section><section id="config"><h2>Configurazione</h2><p>Puoi impostare conservazione, numero di versioni, spazio massimo, dimensione massima degli elementi e quali operazioni generano snapshot.</p></section><section id="exclusions"><h2>Esclusioni</h2><p>In <b>Impostazioni → Time Machine → Esclusioni</b> aggiungi file o cartelle da ignorare. Se escludi una cartella, vengono ignorati anche tutti i discendenti, perfino quando una cartella padre viene salvata in uno snapshot.</p></section><section id="restore"><h2>Gestire e ripristinare</h2><p>La gestione Time Machine permette di vedere le versioni disponibili, ripristinare e proteggere versioni importanti. Le esclusioni valgono per gli snapshot futuri e non cancellano automaticamente versioni già esistenti.</p></section><div class="related"><h2>Articoli correlati</h2><a href="backup.html">→ Backup e ripristino</a><a href="automation.html">→ Automazioni</a><a href="editors.html">→ Viewer ed editor</a></div></article></div>
-</div>
-</div>
-</div></section></main>
-
-<footer><div class="wrap footer-grid">
-<div>© 2026 Xcopy File Manager</div>
+</div></div></section>
+</main><footer><div class="wrap footer-grid"><div>© 2026 Xcopy File Manager</div>
 <div class="footer-links">
-<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../guide/index.html"><span data-lang="it">Guida</span><span data-lang="en">Guide</span></a>
 <a href="../privacy.html">Privacy</a>
-<a href="../terms.html"><span data-lang="en">Terms</span><span data-lang="it">Termini</span></a>
-<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<a href="../terms.html"><span data-lang="it">Termini</span><span data-lang="en">Terms</span></a>
+<a href="../support.html"><span data-lang="it">Supporto</span><span data-lang="en">Support</span></a>
 <a href="https://github.com/Ferrazzi/xcopyfilemanager">GitHub</a>
-</div></div></footer>
-</body></html>
+</div></div></footer></body></html>

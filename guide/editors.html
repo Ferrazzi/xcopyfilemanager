@@ -1,46 +1,33 @@
-<!doctype html>
-<html lang="en" data-language="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#087f72">
-<title>Built-in viewers and editors — Xcopy File Manager</title>
-<meta name="description" content="Official website, guide, privacy policy and support for Xcopy File Manager for Android.">
+<!doctype html><html lang="en" data-language="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#078A79">
+<title>Editors — Xcopy Guide</title>
 <link rel="icon" href="../xcopy-icon.png">
-<link rel="stylesheet" href="../style.css">
-<script defer src="../site.js"></script>
-</head>
-<body>
+<link rel="stylesheet" href="../style.css"><script defer src="../site.js"></script>
+</head><body>
 <header><div class="wrap nav">
 <a class="brand" href="../index.html"><img src="../xcopy-icon.png" alt="Xcopy File Manager"><span>Xcopy File Manager</span></a>
 <nav class="navlinks">
-<a href="../index.html">Home</a>
-<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../index.html#features"><span data-lang="it">Funzioni</span><span data-lang="en">Features</span></a>
+<a href="../index.html#advanced"><span data-lang="it">Avanzate</span><span data-lang="en">Advanced</span></a>
+<a href="../guide/index.html"><span data-lang="it">Guida</span><span data-lang="en">Guide</span></a>
 <a href="../privacy.html">Privacy</a>
-<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
-<div class="lang"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="it">IT</button></div>
-</nav>
-</div></header>
-
-<main><section><div class="wrap guide-layout">
-<aside class="guide-side"><a href="index.html">← <span data-lang="en">All guide articles</span><span data-lang="it">Tutti gli articoli</span></a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Per iniziare</div><a href="getting_started.html">Primi passi</a><a href="tree.html">Albero di navigazione</a><a href="toolbar.html">Barra strumenti verticale</a><a href="selection.html">Selezione multipla</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">File e cartelle</div><a href="copy_move.html">Copiare, spostare e duplicare</a><a href="hidden_sort.html">File nascosti e ordinamento</a><a href="search.html">Ricerca</a><a href="details.html">Dettagli, dimensioni e conteggi</a><a href="archives_trash.html">Archivi e Cestino</a><a href="apps_usb.html">App e dispositivi USB</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Rete e condivisione</div><a href="remote.html">Connessioni remote</a><a href="wifi.html">Trasferimento file Wi‑Fi</a><a href="ftp_server.html">Server FTP interno</a><a href="ssh_server.html">Server SSH/SFTP interno</a><a href="dlna.html">DLNA / UPnP</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Sicurezza e dati</div><a href="vaults.html">Cassaforti</a><a href="backup.html">Backup e ripristino dell’app</a><a href="security.html">Sicurezza e privacy</a><a href="shizuku.html">Shizuku e root</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Strumenti</div><a href="notes.html">Gestore Note</a><a href="editors.html">Viewer ed editor integrati</a><a href="metadata.html">Metadati audio e video</a><a href="time_machine.html">Time Machine</a><a href="automation.html">Automazioni</a><a href="shortcuts.html">Shortcut, Quick Settings e widget</a><a href="settings.html">Impostazioni</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Aiuto</div><a href="troubleshooting.html">Risoluzione problemi</a></aside>
-<div class="guide-main">
-<div class="breadcrumb"><a href="index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a> / <span data-lang="en">Built-in viewers and editors</span><span data-lang="it">Viewer ed editor integrati</span></div>
-<div class="guide-article">
+<a href="../support.html"><span data-lang="it">Supporto</span><span data-lang="en">Support</span></a>
+<div class="lang"><button data-set-lang="en">EN</button><button data-set-lang="it">IT</button></div>
+</nav></div></header>
+<main class="guide-shell">
+<section class="guide-top"><div class="wrap">
+<div class="guide-titlebar"><a class="guide-back" href="index.html">←</a><div><div class="kicker" data-lang="it">Guida Xcopy</div><div class="kicker" data-lang="en">Xcopy Guide</div><h1 data-lang="it">Articolo guida</h1><h1 data-lang="en">Guide article</h1></div></div>
+</div></section>
+<section class="guide-article-wrap"><div class="wrap"><div class="guide-article">
 <div data-lang="en"><article><h1>Built-in viewers and editors</h1><p class="intro">Open common formats without leaving Xcopy and use menus consistent with the app.</p><nav class="toc"><b>On this page</b><a href="#text">Text and code</a><a href="#media">Images, audio and video</a><a href="#pdfhex">PDF and Hex</a><a href="#db">Databases</a></nav><section id="text"><h2>Text and code</h2><p>Edit supported text/source files. Before saving, Time Machine can capture the previous version when enabled and the item is not excluded.</p></section><section id="media"><h2>Images, audio and video</h2><p>The image viewer supports fullscreen, zoom and navigation among folder images. Audio/video can be played internally, including compatible remote streams.</p></section><section id="pdfhex"><h2>PDF and Hex</h2><p>PDF viewer/editor and Hex Viewer/Editor use Xcopy-style menus; editing depends on source writability.</p></section><section id="db"><h2>Databases</h2><p>SQLite Database Explorer/Editor shows structure/data and can edit supported databases. For Microsoft Access databases you can open supported MDB/ACCDB files, browse tables and data, and use the tools available for the opened file.</p></section><div class="related"><h2>Related articles</h2><a href="metadata.html">→ Audio/video metadata</a><a href="time_machine.html">→ Time Machine</a></div></article></div>
 <div data-lang="it"><article><h1>Viewer ed editor integrati</h1><p class="intro">Aprire i formati comuni senza uscire da Xcopy e usare menu coerenti con il resto dell’app.</p><nav class="toc"><b>In questa pagina</b><a href="#text">Testo e codice</a><a href="#media">Immagini, audio e video</a><a href="#pdfhex">PDF e Hex</a><a href="#db">Database</a></nav><section id="text"><h2>Testo e codice</h2><p>Modifica file testuali e sorgenti supportati. Prima di salvare, Time Machine può catturare una versione precedente se è attivo e l’elemento non è escluso.</p></section><section id="media"><h2>Immagini, audio e video</h2><p>Il visualizzatore immagini supporta fullscreen, zoom e navigazione tra immagini della cartella. Audio e video possono essere riprodotti internamente, inclusi flussi remoti compatibili.</p></section><section id="pdfhex"><h2>PDF e Hex</h2><p>Viewer/editor PDF e Hex Viewer/Editor usano menu integrati nello stile Xcopy; le operazioni di modifica dipendono dalla scrivibilità della sorgente.</p></section><section id="db"><h2>Database</h2><p>SQLite Database Explorer/Editor permette di vedere struttura e dati e modificare database supportati. Per i database Microsoft Access puoi aprire file MDB/ACCDB supportati, consultare tabelle e dati e usare gli strumenti disponibili per il file aperto.</p></section><div class="related"><h2>Articoli correlati</h2><a href="metadata.html">→ Metadati audio/video</a><a href="time_machine.html">→ Time Machine</a></div></article></div>
-</div>
-</div>
-</div></section></main>
-
-<footer><div class="wrap footer-grid">
-<div>© 2026 Xcopy File Manager</div>
+</div></div></section>
+</main><footer><div class="wrap footer-grid"><div>© 2026 Xcopy File Manager</div>
 <div class="footer-links">
-<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../guide/index.html"><span data-lang="it">Guida</span><span data-lang="en">Guide</span></a>
 <a href="../privacy.html">Privacy</a>
-<a href="../terms.html"><span data-lang="en">Terms</span><span data-lang="it">Termini</span></a>
-<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<a href="../terms.html"><span data-lang="it">Termini</span><span data-lang="en">Terms</span></a>
+<a href="../support.html"><span data-lang="it">Supporto</span><span data-lang="en">Support</span></a>
 <a href="https://github.com/Ferrazzi/xcopyfilemanager">GitHub</a>
-</div></div></footer>
-</body></html>
+</div></div></footer></body></html>

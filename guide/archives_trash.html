@@ -1,46 +1,33 @@
-<!doctype html>
-<html lang="en" data-language="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#087f72">
-<title>Archives and Trash — Xcopy File Manager</title>
-<meta name="description" content="Official website, guide, privacy policy and support for Xcopy File Manager for Android.">
+<!doctype html><html lang="en" data-language="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#078A79">
+<title>Archives_Trash — Xcopy Guide</title>
 <link rel="icon" href="../xcopy-icon.png">
-<link rel="stylesheet" href="../style.css">
-<script defer src="../site.js"></script>
-</head>
-<body>
+<link rel="stylesheet" href="../style.css"><script defer src="../site.js"></script>
+</head><body>
 <header><div class="wrap nav">
 <a class="brand" href="../index.html"><img src="../xcopy-icon.png" alt="Xcopy File Manager"><span>Xcopy File Manager</span></a>
 <nav class="navlinks">
-<a href="../index.html">Home</a>
-<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../index.html#features"><span data-lang="it">Funzioni</span><span data-lang="en">Features</span></a>
+<a href="../index.html#advanced"><span data-lang="it">Avanzate</span><span data-lang="en">Advanced</span></a>
+<a href="../guide/index.html"><span data-lang="it">Guida</span><span data-lang="en">Guide</span></a>
 <a href="../privacy.html">Privacy</a>
-<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
-<div class="lang"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="it">IT</button></div>
-</nav>
-</div></header>
-
-<main><section><div class="wrap guide-layout">
-<aside class="guide-side"><a href="index.html">← <span data-lang="en">All guide articles</span><span data-lang="it">Tutti gli articoli</span></a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Per iniziare</div><a href="getting_started.html">Primi passi</a><a href="tree.html">Albero di navigazione</a><a href="toolbar.html">Barra strumenti verticale</a><a href="selection.html">Selezione multipla</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">File e cartelle</div><a href="copy_move.html">Copiare, spostare e duplicare</a><a href="hidden_sort.html">File nascosti e ordinamento</a><a href="search.html">Ricerca</a><a href="details.html">Dettagli, dimensioni e conteggi</a><a href="archives_trash.html">Archivi e Cestino</a><a href="apps_usb.html">App e dispositivi USB</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Rete e condivisione</div><a href="remote.html">Connessioni remote</a><a href="wifi.html">Trasferimento file Wi‑Fi</a><a href="ftp_server.html">Server FTP interno</a><a href="ssh_server.html">Server SSH/SFTP interno</a><a href="dlna.html">DLNA / UPnP</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Sicurezza e dati</div><a href="vaults.html">Cassaforti</a><a href="backup.html">Backup e ripristino dell’app</a><a href="security.html">Sicurezza e privacy</a><a href="shizuku.html">Shizuku e root</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Strumenti</div><a href="notes.html">Gestore Note</a><a href="editors.html">Viewer ed editor integrati</a><a href="metadata.html">Metadati audio e video</a><a href="time_machine.html">Time Machine</a><a href="automation.html">Automazioni</a><a href="shortcuts.html">Shortcut, Quick Settings e widget</a><a href="settings.html">Impostazioni</a><div style="padding:9px 10px 3px;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase">Aiuto</div><a href="troubleshooting.html">Risoluzione problemi</a></aside>
-<div class="guide-main">
-<div class="breadcrumb"><a href="index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a> / <span data-lang="en">Archives and Trash</span><span data-lang="it">Archivi e Cestino</span></div>
-<div class="guide-article">
+<a href="../support.html"><span data-lang="it">Supporto</span><span data-lang="en">Support</span></a>
+<div class="lang"><button data-set-lang="en">EN</button><button data-set-lang="it">IT</button></div>
+</nav></div></header>
+<main class="guide-shell">
+<section class="guide-top"><div class="wrap">
+<div class="guide-titlebar"><a class="guide-back" href="index.html">←</a><div><div class="kicker" data-lang="it">Guida Xcopy</div><div class="kicker" data-lang="en">Xcopy Guide</div><h1 data-lang="it">Articolo guida</h1><h1 data-lang="en">Guide article</h1></div></div>
+</div></section>
+<section class="guide-article-wrap"><div class="wrap"><div class="guide-article">
 <div data-lang="en"><article><h1>Archives and Trash</h1><p class="intro">Browse, create and extract archives locally or directly from Xcopy network sources, and recover supported deletions from Trash.</p><nav class="toc"><b>On this page</b><a href="#formats">Formats</a><a href="#remote">Remote archives</a><a href="#password">Passwords</a><a href="#trash">Trash</a><a href="#limits">Limits</a></nav><section id="formats"><h2>Supported archive formats</h2><p>Xcopy can browse ZIP/APK, 7z, RAR, TAR, TAR.GZ, TAR.BZ2, TAR.XZ, GZ, BZ2 and XZ. Creation supports ZIP, AES-256 encrypted ZIP, 7z, TAR, TAR.GZ, TAR.BZ2 and TAR.XZ.</p><p>RAR browsing and extraction also support modern RAR archives, including RAR5/RAR7, as well as earlier RAR formats.</p></section><section id="remote"><h2>Archives on LAN, FTP, SFTP, cloud and USB</h2><p>When you open an archive from SMB/NAS, FTP, SSH/SFTP, WebDAV, Drive, DLNA or USB Host, Xcopy prepares it temporarily before showing its contents. The time required depends on file size and connection speed.</p><div class="callout"><b>Remote archives are read-only while browsing.</b>You can open items inside the archive and copy them to another location. To modify a remote archive, first copy it to a writable location.</div></section><section id="password"><h2>Password-protected archives</h2><p>AES ZIP and protected RAR archives request the password only when needed. Passwords are kept for the current app session and are not written into the archive itself or shown in the file list.</p></section><section id="trash"><h2>Trash</h2><p>When Trash is enabled, supported deletions can be recovered from the tree entry. Permanently deleting from Trash cannot be undone.</p></section><section id="limits"><h2>Limits</h2><p>Some remote/protected sources cannot use local Trash in the same way. Multi-volume archives also require all of their volumes to be locally available to the archive engine.</p></section><div class="related"><h2>Related articles</h2><a href="remote.html">→ Remote connections</a><a href="copy_move.html">→ Copying and moving</a><a href="time_machine.html">→ Time Machine</a></div></article></div>
 <div data-lang="it"><article><h1>Archivi e Cestino</h1><p class="intro">Sfoglia, crea ed estrai archivi locali o presenti sulle sorgenti di rete Xcopy e recupera dal Cestino le eliminazioni supportate.</p><nav class="toc"><b>In questa pagina</b><a href="#formats">Formati</a><a href="#remote">Archivi remoti</a><a href="#password">Password</a><a href="#trash">Cestino</a><a href="#limits">Limiti</a></nav><section id="formats"><h2>Formati archivio supportati</h2><p>Xcopy può sfogliare ZIP/APK, 7z, RAR, TAR, TAR.GZ, TAR.BZ2, TAR.XZ, GZ, BZ2 e XZ. La creazione supporta ZIP, ZIP AES-256 con password, 7z, TAR, TAR.GZ, TAR.BZ2 e TAR.XZ.</p><p>La lettura e l’estrazione supportano anche archivi RAR moderni, compresi RAR5/RAR7, oltre ai formati RAR precedenti.</p></section><section id="remote"><h2>Archivi su LAN, FTP, SFTP, cloud e USB</h2><p>Quando apri un archivio da SMB/NAS, FTP, SSH/SFTP, WebDAV, Drive, DLNA o USB Host, Xcopy lo prepara temporaneamente prima di mostrarne il contenuto. Il tempo necessario dipende dalla dimensione del file e dalla velocità della connessione.</p><div class="callout"><b>Gli archivi remoti sono in sola lettura durante la navigazione.</b>Puoi aprire gli elementi contenuti nell’archivio e copiarli in un’altra posizione. Per modificare un archivio remoto, copialo prima in una posizione modificabile.</div></section><section id="password"><h2>Archivi protetti da password</h2><p>Gli ZIP AES e i RAR protetti chiedono la password solo quando serve. La password resta nella sessione corrente dell’app e non viene mostrata nella lista file.</p></section><section id="trash"><h2>Cestino</h2><p>Quando il Cestino è disponibile, le eliminazioni supportate possono essere recuperate dal relativo nodo del tree. La cancellazione definitiva dal Cestino non può essere annullata.</p></section><section id="limits"><h2>Limiti</h2><p>Alcune sorgenti remote/protette non possono usare il Cestino locale nello stesso modo. Gli archivi multi-volume richiedono inoltre che tutti i volumi necessari siano disponibili localmente al motore archivi.</p></section><div class="related"><h2>Articoli correlati</h2><a href="remote.html">→ Connessioni remote</a><a href="copy_move.html">→ Copiare e spostare</a><a href="time_machine.html">→ Time Machine</a></div></article></div>
-</div>
-</div>
-</div></section></main>
-
-<footer><div class="wrap footer-grid">
-<div>© 2026 Xcopy File Manager</div>
+</div></div></section>
+</main><footer><div class="wrap footer-grid"><div>© 2026 Xcopy File Manager</div>
 <div class="footer-links">
-<a href="../guide/index.html"><span data-lang="en">Guide</span><span data-lang="it">Guida</span></a>
+<a href="../guide/index.html"><span data-lang="it">Guida</span><span data-lang="en">Guide</span></a>
 <a href="../privacy.html">Privacy</a>
-<a href="../terms.html"><span data-lang="en">Terms</span><span data-lang="it">Termini</span></a>
-<a href="../support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span></a>
+<a href="../terms.html"><span data-lang="it">Termini</span><span data-lang="en">Terms</span></a>
+<a href="../support.html"><span data-lang="it">Supporto</span><span data-lang="en">Support</span></a>
 <a href="https://github.com/Ferrazzi/xcopyfilemanager">GitHub</a>
-</div></div></footer>
-</body></html>
+</div></div></footer></body></html>
