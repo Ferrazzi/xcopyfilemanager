@@ -178,3 +178,175 @@ html[data-language="it"] a[data-lang="it"],html[data-language="en"] a[data-lang=
  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
  .reveal{opacity:1;transform:none}
 }
+
+
+/* ===== v7 GUIDE TREE ===== */
+.guide-tree-layout{
+  display:grid;
+  grid-template-columns:minmax(310px, .82fr) minmax(0, 1.18fr);
+  gap:30px;
+  align-items:start;
+}
+.guide-tree-panel{
+  background:#f7fafb;
+  border:1px solid #b9cfd9;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(45,76,88,.06);
+}
+.tree-panel-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:16px 17px;
+  background:#e3eef3;
+  border-bottom:1px solid #bfd1da;
+}
+.tree-panel-head>img{width:38px;height:38px}
+.tree-panel-head b{display:block;font-size:1rem}
+.tree-panel-head span{display:block;color:#617d8a;font-size:.82rem}
+.tree-home{font-weight:850;color:#466875}
+
+.guide-tree{padding:8px 0}
+.tree-group{border-bottom:1px solid #d7e4e9}
+.tree-group:last-child{border-bottom:0}
+.tree-group summary{
+  list-style:none;
+  display:grid;
+  grid-template-columns:22px 36px minmax(0,1fr) auto;
+  align-items:center;
+  gap:9px;
+  padding:13px 15px;
+  cursor:pointer;
+  user-select:none;
+  transition:background .2s ease;
+}
+.tree-group summary::-webkit-details-marker{display:none}
+.tree-group summary:hover{background:#eef6f6}
+.tree-arrow{
+  width:0;height:0;
+  border-top:5px solid transparent;
+  border-bottom:5px solid transparent;
+  border-left:7px solid #4f7482;
+  transform-origin:35% 50%;
+  transition:transform .2s ease;
+}
+.tree-group[open] .tree-arrow{transform:rotate(90deg)}
+.tree-icon{width:32px;height:32px;padding:3px}
+.tree-title{font-weight:850;color:#24404b}
+.tree-count{
+  min-width:25px;height:25px;padding:0 7px;
+  display:grid;place-items:center;
+  border-radius:999px;background:#dbe9ee;
+  color:#5e7b87;font-size:.74rem;font-weight:850;
+}
+.tree-children{
+  position:relative;
+  margin-left:25px;
+  padding:0 10px 8px 30px;
+}
+.tree-children:before{
+  content:"";
+  position:absolute;
+  left:13px;top:0;bottom:16px;
+  width:2px;background:#b7d0da;
+}
+.tree-node{
+  position:relative;
+  min-height:42px;
+  display:flex;
+  align-items:center;
+  padding:8px 10px 8px 14px;
+  border-radius:10px;
+  color:#32515d;
+  font-size:.89rem;
+  transition:background .18s ease, transform .18s ease, color .18s ease;
+}
+.tree-node:hover{
+  background:#e7f3f1;
+  color:#08786b;
+  transform:translateX(2px);
+}
+.tree-node.active{
+  background:#dcefeb;
+  color:#06776b;
+  font-weight:850;
+}
+.tree-branch{
+  position:absolute;
+  left:-17px;top:50%;
+  width:17px;height:2px;background:#b7d0da;
+}
+.tree-dot{
+  position:absolute;
+  left:-21px;top:50%;
+  width:8px;height:8px;border-radius:50%;
+  background:#63b8ad;
+  transform:translateY(-50%);
+  border:2px solid #eef4f7;
+}
+.tree-node.active .tree-dot{background:#078a79;box-shadow:0 0 0 4px rgba(7,138,121,.10)}
+.tree-node-text{min-width:0}
+
+.guide-welcome{
+  background:#f8fbfc;
+  border:1px solid #c2d5dd;
+  border-radius:20px;
+  padding:36px;
+  min-height:360px;
+}
+.guide-welcome-icon{
+  width:68px;height:68px;
+  border-radius:17px;
+  background:#e2edf2;
+  display:grid;place-items:center;
+  margin-bottom:20px;
+}
+.guide-welcome-icon img{width:52px;height:52px;border-radius:12px}
+.guide-welcome h2{font-size:2rem}
+.guide-welcome p{color:#607986}
+.guide-welcome-box{
+  margin-top:28px;
+  padding:18px 20px;
+  border-left:5px solid #568797;
+  background:#e7eef3;
+  border-radius:0 14px 14px 0;
+}
+.guide-welcome-box b{display:block;margin-bottom:4px}
+.guide-welcome-box span{display:block;color:#536f7b}
+
+.guide-top-compact{padding:22px 0 18px}
+.guide-article-layout{
+  display:grid;
+  grid-template-columns:300px minmax(0,1fr);
+  gap:28px;
+  align-items:start;
+}
+.guide-tree-sticky{
+  position:sticky;
+  top:92px;
+  max-height:calc(100vh - 112px);
+  overflow:auto;
+}
+.guide-article-main{min-width:0}
+.guide-article-main .guide-article{
+  max-width:none;
+  margin:0;
+}
+
+/* tree search */
+.tree-node.tree-hidden{display:none}
+.tree-group.tree-hidden{display:none}
+
+/* Mobile: tree remains app-like but collapses naturally */
+@media(max-width:900px){
+  .guide-tree-layout,.guide-article-layout{grid-template-columns:1fr}
+  .guide-tree-sticky{position:static;max-height:none}
+  .guide-welcome{min-height:0}
+}
+@media(max-width:600px){
+  .tree-group summary{grid-template-columns:18px 31px minmax(0,1fr) auto;padding:11px 12px}
+  .tree-icon{width:28px;height:28px}
+  .tree-children{margin-left:20px;padding-left:27px}
+  .guide-welcome{padding:24px}
+}

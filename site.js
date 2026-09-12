@@ -51,3 +51,27 @@
    });
  });
 })();
+
+
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('[data-search-tree]').forEach(input=>{
+    input.addEventListener('input',()=>{
+      const q=(input.value||'').trim().toLowerCase();
+      const lang=document.documentElement.getAttribute('data-language')||'en';
+      document.querySelectorAll('.guide-tree .tree-group').forEach(group=>{
+        let matched=false;
+        group.querySelectorAll('.tree-node').forEach(node=>{
+          const span=node.querySelector('[data-lang="'+lang+'"]');
+          const text=(span?span.textContent:node.textContent).toLowerCase();
+          const show=!q||text.includes(q);
+          node.classList.toggle('tree-hidden',!show);
+          if(show) matched=true;
+        });
+        const title=group.querySelector('.tree-title [data-lang="'+lang+'"]');
+        const titleMatch=title && title.textContent.toLowerCase().includes(q);
+        if(q && (matched||titleMatch)) group.open=true;
+        group.classList.toggle('tree-hidden', !!q && !matched && !titleMatch);
+      });
+    });
+  });
+});
