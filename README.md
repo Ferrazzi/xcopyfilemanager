@@ -1,3 +1,8 @@
+# Xcopy File Manager website — v5 Compact
+
+This version physically resizes screenshots for the web and contains hard CSS overflow limits.
+Replace the files in the GitHub repository root with the contents of this package.
+
 # Xcopy File Manager official website
 
 GitHub Pages website for Xcopy File Manager for Android.
